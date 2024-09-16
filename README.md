@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="your-photo.jpg" alt="Your Name Photo" class="profile-photo">
+        <img src="Kavana_Picture.jpg" alt="Your Name Photo" class="profile-photo">
         <h1>[Your Name]</h1>
         <p>PhD Student in [Department], [University Name]</p>
         <p>Researching generative models, deep learning, and AI</p>
