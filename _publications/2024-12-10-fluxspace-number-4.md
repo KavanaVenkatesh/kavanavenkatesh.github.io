@@ -2,10 +2,17 @@
 title: "FluxSpace: Disentangled Image Editing in Rectified Flow Models"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about fixing template issue #693.'
-date: 2024-12-08
+permalink: /publication/2024-12-12-fluxspace-number-4
+excerpt: 'We propose a text-guided dual-level image editing framework for rectified flow transformers, enabling fine-grained and coarse editing by leveraging semantically interpretable attention outputs.'
+date: 2024-12-12
 venue: 'arXiv preprint'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
+paperurl: 'https://arxiv.org/abs/2412.09611'
+citation: '@misc{dalva2024fluxspace,
+    title={FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers}, 
+    author={Yusuf Dalva and Kavana Venkatesh and Pinar Yanardag},
+    year={2024},
+    eprint={2412.09611},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+  }'
 ---
