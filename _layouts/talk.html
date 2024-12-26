@@ -42,7 +42,21 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+              <!-- Add Related Links -->
+        {% if page.related_links %}
+          <h3>Related Links:</h3>
+          <ul>
+            {% for link in page.related_links %}
+              <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      
+        {% if page.link %}
+          <div>
+            <a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a>
+          </div>
+        {% endif %}
       </section>
 
       <footer class="page__meta">
