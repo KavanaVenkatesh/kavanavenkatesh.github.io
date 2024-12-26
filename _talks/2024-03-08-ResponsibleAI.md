@@ -6,7 +6,7 @@ venue: University of Massachusetts
 location: Amherst, MA
 related_links:
   - text: View Slides
-    url: [slides/crafting-balance.pdf](https://drive.google.com/file/d/1ud4OsGyVxK7_-q-fdNMtdF7MlYa9NJS5/view?usp=sharing)
+    url: https://drive.google.com/file/d/1ud4OsGyVxK7_-q-fdNMtdF7MlYa9NJS5/view?usp=sharing
   - text: Additional Resources
     url: resources/crafting-balance.html
 ---
