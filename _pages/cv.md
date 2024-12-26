@@ -15,17 +15,15 @@ Education
 * M.S. in Data Science, Northeastern University, Boston, MA, Aug 2019 - Dec 2021
 * B.E. in Electrical and Electronics Engineering, SJCE, Mysuru, India,  Jun 2014 - Mar 2018
 
-Work experience
+Professional experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
+* Data Scientist - Generative AI | Jan - Aug 2024
+  * iLink Digital (Remote) 
   * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+  
+* Data Scientist | Feb 2022 - Oct 2023
+  * Fidelity Investments
+  * Duties included: Merging pull requests 
 
 * Summer 2015: Research Assistant
   * Github University
