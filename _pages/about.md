@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hi there! Welcome to my corner of the internet! I am a PhD student at <a href="https://www.vt.edu/" target="_blank" style="color: #007bff; text-decoration: none;">Virginia Tech</a>. Previously, I earned my master's degree in Data Science from Northeastern University, Boston. My research focuses on Large Language Models and extending the evolving technology in NLP to Computer Vision tasks, especially Diffusion Models. When I'm not busy exploring AI frontiers, you might find me geeking out over Large Language Models, enjoying fun books, or perfecting my latest cup of coffee.☕
+👋 Hi there! Welcome to my corner of the internet! I am a PhD student at <a href="https://www.vt.edu/" target="_blank" style="color: #007bff; text-decoration: none;">Virginia Tech</a>. Previously, I earned my master's degree in Data Science from <a href="https://www.northeastern.edu/" target="_blank" style="color: #007bff; text-decoration: none;">Northeastern University</a>, Boston. My research focuses on Large Language Models and extending the evolving technology in NLP to Computer Vision tasks, especially Diffusion Models. When I'm not busy exploring AI frontiers, you might find me geeking out over Large Language Models, enjoying fun books, or perfecting my latest cup of coffee.☕
 
 A few fun things about me:
 - 🌍 I love traveling and capturing stories through photography.
