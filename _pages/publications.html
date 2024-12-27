@@ -16,9 +16,8 @@ author_profile: true
 <!-- Group Publications by Year -->
 {% assign grouped_papers = site.publications | group_by: 'year' %}
 {% for group in grouped_papers reversed %}
-  <div style="display: flex; align-items: center; margin-bottom: 10px;">
-    <h2 style="text-align: right; color: lightgray; font-size: 2.5em; margin-right: 20px;">{{ group.name }}</h2>
-    <div style="flex-grow: 1; border-bottom: 1px solid #eee;"></div>
+  <div style="display: flex; align-items: baseline; margin-bottom: 5px;">
+    <h2 style="text-align: right; color: lightgray; font-size: 2.2em; font-weight: bold; margin-left: auto;">{{ group.name }}</h2>
   </div>
 
   <!-- Loop through Publications in Each Year -->
@@ -26,8 +25,8 @@ author_profile: true
     <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 10px;">
       <!-- Display Teaser Image -->
       {% if post.teaser %}
-        <div class="teaser" style="margin-right: 20px;">
-          <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" class="teaser-img" style="width: 150px; height: auto; border-radius: 8px;">
+        <div class="teaser" style="margin-right: 15px;">
+          <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" class="teaser-img" style="width: 120px; height: auto; border-radius: 8px;">
         </div>
       {% endif %}
 
@@ -53,11 +52,11 @@ author_profile: true
 
         <!-- Display Venue -->
         {% if post.venue %}
-          <p style="margin: 0; font-style: italic; color: gray; font-size: 0.9em;">{{ post.venue }}</p>
+          <p style="margin: 0; font-style: italic; color: gray; font-size: 0.85em;">{{ post.venue }}</p>
         {% endif %}
 
         <!-- Buttons for Links and Actions -->
-        <p style="display: flex; gap: 10px; margin-top: 10px;">
+        <p style="display: flex; gap: 8px; margin-top: 8px;">
           {% if post.websiteurl %}
             <a href="{{ post.websiteurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">Website</a>
           {% endif %}
@@ -90,7 +89,11 @@ author_profile: true
 <script>
   function toggleContent(id) {
     var element = document.getElementById(id);
-    element.style.display = (element.style.display === "block") ? "none" : "block";
+    if (element.style.display === "block") {
+      element.style.display = "none";
+    } else {
+      element.style.display = "block";
+    }
   }
 
   function copyBibtex(id, iconId) {
