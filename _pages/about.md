@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+<div style="max-width: 900px; margin: 0 auto;">
 I am a PhD student at Virginia Tech. Previously, I earned my master's degree in Data Science from Northeastern University, Boston. My research focuses on Large Language Models and extending the evolving technology in NLP to Computer Vision tasks, especially Diffusion Models.
 
 My work aims to develop interpretable and efficient generative models to enable safe consumption of AI at scale across diverse domains. Specific areas of focus include:
