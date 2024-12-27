@@ -50,16 +50,13 @@ author_profile: true
 
       <!-- Abstract and BibTeX Toggle Buttons -->
       <p>
-        <button onclick="toggleVisibility('abstract-{{ forloop.index }}')" style="margin-right: 10px;">Abstract</button>
-        <button onclick="toggleVisibility('bibtex-{{ forloop.index }}')">BibTeX</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="margin-right: 10px;">Abstract</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')">BibTeX</button>
       </p>
 
-      <div id="abstract-{{ forloop.index }}" style="display: none; border: 1px solid #ddd; padding: 10px; margin-top: 10px; background: #f9f9f9;">
-        {{ post.abstract }}
-      </div>
-
-      <div id="bibtex-{{ forloop.index }}" style="display: none; border: 1px solid #ddd; padding: 10px; margin-top: 10px; background: #f9f9f9; white-space: pre-wrap;">
-        {{ post.bibtex }}
+      <div id="content-{{ forloop.index }}" style="display: none; border: 1px solid #ddd; padding: 10px; margin-top: 10px; background: #f9f9f9;">
+        <div id="content-{{ forloop.index }}-abstract">{{ post.abstract }}</div>
+        <div id="content-{{ forloop.index }}-bibtex" style="display: none; white-space: pre-wrap;">{{ post.bibtex }}</div>
       </div>
 
       <!-- Links to PDF -->
@@ -75,12 +72,18 @@ author_profile: true
 
 <!-- Script for toggle functionality -->
 <script>
-  function toggleVisibility(id) {
-    var element = document.getElementById(id);
-    if (element.style.display === "none") {
-      element.style.display = "block";
-    } else {
-      element.style.display = "none";
+  function toggleContent(id, type) {
+    var container = document.getElementById(id);
+    var abstract = document.getElementById(id + '-abstract');
+    var bibtex = document.getElementById(id + '-bibtex');
+
+    container.style.display = "block";
+    if (type === 'abstract') {
+      abstract.style.display = "block";
+      bibtex.style.display = "none";
+    } else if (type === 'bibtex') {
+      bibtex.style.display = "block";
+      abstract.style.display = "none";
     }
   }
 </script>
