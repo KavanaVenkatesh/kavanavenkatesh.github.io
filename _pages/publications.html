@@ -6,60 +6,63 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div style="font-style: italic; color: #666; text-align: center; margin-bottom: 20px;">
-    Hello! For an up-to-date list of my research papers, please see my
-    <a href="{{site.author.googlescholar}}" target="_blank" style="color: #6a0dad;">Google Scholar</a>. * denotes equal contribution.
+  <div class="wordwrap">
+    For an up-to-date list of my research papers, please see my <a href="{{site.author.googlescholar}}">Google Scholar</a>.
   </div>
 {% endif %}
 
-<!-- Publication List -->
-<div style="display: flex; flex-direction: column; gap: 20px;">
-  {% for post in site.publications reversed %}
-  <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
-    
-    <!-- Teaser Image -->
+{% include base_path %}
+
+<!-- Main heading for Publications -->
+<hr />
+
+<!-- Loop through all publications -->
+{% for post in site.publications reversed %}
+  <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+    <!-- Display Teaser Image -->
     {% if post.teaser %}
-      <div style="flex-shrink: 0;">
-        <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" style="width: 120px; height: auto; border-radius: 5px;">
+      <div class="teaser" style="margin-right: 20px;">
+        <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" class="teaser-img" style="width: 150px; height: auto; border-radius: 8px;">
       </div>
     {% endif %}
-    
-    <!-- Publication Content -->
+
+    <!-- Display Details -->
     <div>
-      <!-- Title -->
-      <h3 style="color: #000000; margin: 0 0 5px 0;">
-        <strong>{{ post.title }}</strong>
+      <!-- Display Title -->
+      <h3>
+        <a href="{{ post.permalink }}" style="color: #000000; text-decoration: none; font-weight: bold;">{{ post.title }}</a>
       </h3>
-      
-      <!-- Authors -->
-      <p style="font-size: 0.9em; margin: 0 0 5px 0;">
-        <strong>{{ post.authors | join: ', ' }}</strong>
-      </p>
-      
-      <!-- Venue -->
+
+      <!-- Display Authors with Links -->
+      {% if post.authors %}
+        <p style="margin: 0; font-style: italic;">
+          {% for author in post.authors %}
+            <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
+            {% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+
+      <!-- Display Venue (if applicable) -->
       {% if post.venue %}
-        <p style="font-style: italic; color: #666; margin: 0 0 5px 0;">
-          {{ post.venue }}
-        </p>
+        <p style="margin: 0; font-style: italic; color: gray;">{{ post.venue }}</p>
       {% endif %}
-      
-      <!-- Description -->
+
+      <!-- Abstract/Description -->
       {% if post.description %}
-        <p style="font-size: 0.9em; margin: 0 0 10px 0; color: #333;">
-          {{ post.description }}
-        </p>
+        <p style="margin-top: 10px;">{{ post.description }}</p>
       {% endif %}
-      
-      <!-- Buttons -->
-      <div style="margin-top: 10px;">
+
+      <!-- Links to PDF and BibTeX -->
+      <p>
         {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank" style="padding: 8px 12px; border: none; border-radius: 5px; background-color: #007bff; color: #ffffff; text-decoration: none; font-size: 0.85em; margin-right: 10px;">arXiv PDF</a>
+          <a href="{{ post.paperurl }}" target="_blank" style="color: #007bff; text-decoration: none; margin-right: 15px;">[PDF]</a>
         {% endif %}
-        {% if post.bibtex %}
-          <a href="{{ post.bibtex }}" target="_blank" style="padding: 8px 12px; border: none; border-radius: 5px; background-color: #6a0dad; color: #ffffff; text-decoration: none; font-size: 0.85em;">BibTeX</a>
+        {% if post.bibtexurl %}
+          <a href="{{ post.bibtexurl }}" target="_blank" style="color: #007bff; text-decoration: none;">[BibTeX]</a>
         {% endif %}
-      </div>
+      </p>
     </div>
   </div>
-  {% endfor %}
-</div>
+  <hr />
+{% endfor %}
