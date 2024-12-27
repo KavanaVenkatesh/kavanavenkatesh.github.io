@@ -19,22 +19,16 @@ My work aims to develop interpretable and efficient generative models to enable 
 
 ## <span style="color: #6a0dad; font-size: 1.5em;">📰 Recent News</span>
 
-<table>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Dec. 2024</td>
-  <td>🎉 Two papers submitted to CVPR on enhancing diffusion models and semantic editing using transformers.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Oct. 2023</td>
-  <td>💻 Delivered a webinar on 'Harnessing the Power of LLMs' at Analytics Vidhya with 5K+ attendees.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Mar. 2024</td>
-  <td>🎙️ Invited talk at UMass Amherst on balancing open-source LLMs for responsible AI.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Sep. 2023</td>
-  <td>🌟 Recognized as Women in Data Science Ambassador for Greater Boston region.</td>
-</tr>
-</table>
+**Dec. 2024**  
+🎉 Two papers submitted to CVPR on enhancing diffusion models and semantic editing using transformers.
+
+**Oct. 2023**  
+💻 Delivered a webinar on 'Harnessing the Power of LLMs' at Analytics Vidhya with 5K+ attendees.
+
+**Mar. 2024**  
+🎙️ Invited talk at UMass Amherst on balancing open-source LLMs for responsible AI.
+
+**Sep. 2023**  
+🌟 Recognized as Women in Data Science Ambassador for Greater Boston region.
+
 
