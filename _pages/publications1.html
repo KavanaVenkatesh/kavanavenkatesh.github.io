@@ -1,0 +1,60 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">
+    For an up-to-date list of my research papers, please see my <a href="{{site.author.googlescholar}}">Google Scholar</a>.
+  </div>
+{% endif %}
+
+{% include base_path %}
+
+<!-- Main heading for Publications -->
+<hr />
+
+<!-- Loop through all publications -->
+{% for post in site.publications reversed %}
+  <div class="publication-item">
+    <!-- Display Teaser Image -->
+    {% if post.teaser %}
+      <div class="teaser">
+        <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" class="teaser-img">
+      </div>
+    {% endif %}
+
+    <!-- Display Title -->
+    <h3>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
+    </h3>
+
+    <!-- Display Authors with Links -->
+    {% if post.authors %}
+      <p>Authors: 
+        {% for author in post.authors %}
+          <a href="{{ author.website }}" target="_blank">{{ author.name }}</a>
+          {% if forloop.last == false %}, {% endif %}
+        {% endfor %}
+      </p>
+    {% endif %}
+
+    <!-- Display Venue (if applicable) -->
+    {% if post.venue %}
+      <p><strong>Venue:</strong> {{ post.venue }}</p>
+    {% endif %}
+
+    <!-- Links to PDF/Slides -->
+    <p>
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}" target="_blank">[PDF]</a>
+      {% endif %}
+      {% if post.slidesurl %}
+        <a href="{{ post.slidesurl }}" target="_blank">[Slides]</a>
+      {% endif %}
+    </p>
+  </div>
+  <hr />
+{% endfor %}
