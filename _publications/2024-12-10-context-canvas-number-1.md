@@ -9,7 +9,7 @@ authors:
     website: "https://isminoula.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: "arXiv preprint"
+venue: "In arXiv preprint arXiv:2412.09614"
 paperurl: "https://arxiv.org/abs/2412.09614"
 websiteurl: "https://context-canvas.github.io/"
 arxivurl: "https://arxiv.org/pdf/2412.09614"
