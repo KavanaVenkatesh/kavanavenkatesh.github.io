@@ -48,21 +48,39 @@ author_profile: true
         <p style="margin: 0; font-style: italic; color: gray;">{{ post.venue }}</p>
       {% endif %}
 
-      <!-- Abstract/Description -->
-      {% if post.description %}
-        <p style="margin-top: 10px;">{{ post.description }}</p>
-      {% endif %}
+      <!-- Abstract and BibTeX Toggle Buttons -->
+      <p>
+        <button onclick="toggleVisibility('abstract-{{ forloop.index }}')" style="margin-right: 10px;">Abstract</button>
+        <button onclick="toggleVisibility('bibtex-{{ forloop.index }}')">BibTeX</button>
+      </p>
 
-      <!-- Links to PDF and BibTeX -->
+      <div id="abstract-{{ forloop.index }}" style="display: none; border: 1px solid #ddd; padding: 10px; margin-top: 10px; background: #f9f9f9;">
+        {{ post.abstract }}
+      </div>
+
+      <div id="bibtex-{{ forloop.index }}" style="display: none; border: 1px solid #ddd; padding: 10px; margin-top: 10px; background: #f9f9f9; white-space: pre-wrap;">
+        {{ post.bibtex }}
+      </div>
+
+      <!-- Links to PDF -->
       <p>
         {% if post.paperurl %}
           <a href="{{ post.paperurl }}" target="_blank" style="color: #007bff; text-decoration: none; margin-right: 15px;">[PDF]</a>
-        {% endif %}
-        {% if post.bibtexurl %}
-          <a href="{{ post.bibtexurl }}" target="_blank" style="color: #007bff; text-decoration: none;">[BibTeX]</a>
         {% endif %}
       </p>
     </div>
   </div>
   <hr />
 {% endfor %}
+
+<!-- Script for toggle functionality -->
+<script>
+  function toggleVisibility(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+      element.style.display = "block";
+    } else {
+      element.style.display = "none";
+    }
+  }
+</script>
