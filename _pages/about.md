@@ -7,9 +7,23 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student at Virginia Tech. Previously, I earned my master's degree in Data Science from Northeastern University, Boston. My research focuses on Large Language Models and extending the evolving technology in NLP to Computer Vision tasks, especially Diffusion Models.
+## 👋 Hi there!
+Welcome to my corner of the internet! I'm Kavana Venkatesh, a PhD student at Virginia Tech. Previously, I earned my master's degree in Data Science from Northeastern University, Boston. My research focuses on Large Language Models and extending the evolving technology in NLP to Computer Vision tasks, especially Diffusion Models. When I'm not busy exploring AI frontiers, you might find me geeking out over Large Language Models, enjoying fun books, or perfecting my latest cup of coffee.☕
 
-My work aims to develop interpretable and efficient generative models to enable safe consumption of AI at scale across diverse domains. Specific areas of focus include:
+A few fun things about me:
+- 🌍 I love traveling and capturing stories through photography.
+- 🐾 Obsessed with pets, especially dogs.
+- 📚 Passionate about storytelling and making AI more accessible to everyone.
+
+Feel free to explore my work, and reach out if you'd like to collaborate or just chat about AI and beyond! 😊
+
+---
+
+## <span style="color: #000000; font-size: 1.5em;">🔬 Research</span>
+
+My research focuses on Large Language Models and extending the evolving technology in NLP to Computer Vision tasks, especially Diffusion Models.
+
+I aim to develop interpretable and efficient generative models to enable safe consumption of AI at scale across diverse domains. Specific areas of focus include:
 
 - **Interpretability of Large Language Models:** Understanding internal models and thought processes behind the reasoning of LLMs
 - **Agentic Framework and Tool Usage:** Researching efficient agentic ecosystems for collaborative reasoning and smart tool usage in LLMs
