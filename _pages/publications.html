@@ -15,17 +15,19 @@ author_profile: true
 {% include base_path %}
 
 <!-- Group Publications by Year -->
-{% assign grouped_papers = site.publications | group_by: 'year' %}
-{% for group in grouped_papers reversed %}
-  <!-- Year Heading -->
+{% assign grouped_papers = site.publications | group_by: 'year' | sort: 'name' | reverse %}
+
+<!-- Loop Through Groups -->
+{% for group in grouped_papers %}
+  <!-- Display Year Header -->
   <h2 style="text-align: right; color: lightgray; font-size: 2.5em; margin-top: 30px;">
     {{ group.name }}
   </h2>
-  
+
   <!-- Loop through Publications -->
   {% for post in group.items %}
   <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-    <!-- Display Teaser Image -->
+    <!-- Teaser Image -->
     {% if post.teaser %}
     <div class="teaser" style="margin-right: 20px;">
       <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" class="teaser-img" 
@@ -33,7 +35,7 @@ author_profile: true
     </div>
     {% endif %}
 
-    <!-- Display Details -->
+    <!-- Details Section -->
     <div>
       <!-- Paper Title -->
       <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal;">
@@ -114,11 +116,7 @@ author_profile: true
 <script>
   function toggleContent(id) {
     var element = document.getElementById(id);
-    if (element.style.display === "block") {
-      element.style.display = "none";
-    } else {
-      element.style.display = "block";
-    }
+    element.style.display = element.style.display === "block" ? "none" : "block";
   }
 
   function copyBibtex(id, iconId) {
