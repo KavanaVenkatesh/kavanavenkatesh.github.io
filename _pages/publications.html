@@ -55,8 +55,11 @@ author_profile: true
       </p>
 
       <div id="content-{{ forloop.index }}" style="display: none; border: 1px solid #ddd; padding: 10px; margin-top: 10px; background: #f9f9f9;">
-        <div id="content-{{ forloop.index }}-abstract">{{ post.abstract }}</div>
-        <div id="content-{{ forloop.index }}-bibtex" style="display: none; white-space: pre-wrap;">{{ post.bibtex }}</div>
+        <div id="content-{{ forloop.index }}-abstract" style="display: none;">{{ post.abstract }}</div>
+        <div id="content-{{ forloop.index }}-bibtex" style="display: none; white-space: pre-wrap; background: #f9f9f9; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace;">
+          {{ post.bibtex }}
+          <button onclick="copyBibtex('content-{{ forloop.index }}-bibtex')" style="margin-top: 10px;">Copy</button>
+        </div>
       </div>
 
       <!-- Links to PDF -->
@@ -85,5 +88,14 @@ author_profile: true
       bibtex.style.display = "block";
       abstract.style.display = "none";
     }
+  }
+
+  function copyBibtex(id) {
+    const bibtexText = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(bibtexText).then(() => {
+      alert("BibTeX copied to clipboard!");
+    }).catch(err => {
+      alert("Failed to copy BibTeX: " + err);
+    });
   }
 </script>
