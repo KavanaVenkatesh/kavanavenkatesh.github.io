@@ -13,29 +13,56 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- Main heading for Publications -->
+<style>
+  h3 {
+    color: #d63384;          /* Dark pink for title */
+    font-size: 1.1em;        /* Slightly larger */
+    font-weight: normal;     /* Not bold */
+  }
+
+  .authors {
+    color: #4a4a4a;          /* Dark grey */
+    font-size: 0.9em;        /* Slightly smaller than title */
+  }
+
+  .venue {
+    color: gray;             /* Gray italic text */
+    font-size: 0.85em;       /* Even smaller */
+    font-style: italic;
+  }
+
+  .button {
+    padding: 4px 8px;        /* Smaller padding */
+    font-size: 0.8em;        /* Smaller text */
+    border: 1px solid black; /* Black border */
+    border-radius: 5px;      /* Rounded corners */
+    text-decoration: none;   /* No underline */
+    margin-right: 5px;       /* Space between buttons */
+  }
+
+  .button:hover {
+    background-color: #f3f3f3;
+  }
+</style>
+
 <hr />
 
 <!-- Loop through all publications -->
 {% for post in site.publications reversed %}
   <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-    <!-- Display Teaser Image -->
     {% if post.teaser %}
       <div class="teaser" style="margin-right: 20px;">
         <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" class="teaser-img" style="width: 150px; height: auto; border-radius: 8px;">
       </div>
     {% endif %}
 
-    <!-- Display Details -->
     <div>
       <!-- Display Title -->
-      <h3 style="color: #d63384; font-size: 1.2em; font-weight: normal;">
-        {{ post.title }}
-      </h3>
+      <h3>{{ post.title }}</h3>
 
-      <!-- Display Authors with Links -->
+      <!-- Display Authors -->
       {% if post.authors %}
-        <p style="margin: 0; color: #4a4a4a;">
+        <p class="authors">
           <strong>Kavana Venkatesh</strong>
           {% for author in post.authors %}
             {% if author.name != "Kavana Venkatesh" %}
@@ -46,33 +73,31 @@ author_profile: true
         </p>
       {% endif %}
 
-      <!-- Display Venue (if applicable) -->
+      <!-- Display Venue -->
       {% if post.venue %}
-        <p style="margin: 0; font-style: italic; color: gray;">{{ post.venue }}</p>
+        <p class="venue">{{ post.venue }}</p>
       {% endif %}
 
-      <!-- Buttons for Website, PDF, arXiv, Abstract, and BibTeX -->
-      <p style="display: flex; gap: 10px; margin-top: 10px;">
+      <!-- Buttons -->
+      <div style="display: flex; gap: 10px; margin-top: 10px;">
         {% if post.websiteurl %}
-          <a href="{{ post.websiteurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">Website</a>
+          <a href="{{ post.websiteurl }}" target="_blank" class="button">Website</a>
         {% endif %}
         {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">PDF</a>
+          <a href="{{ post.paperurl }}" target="_blank" class="button">PDF</a>
         {% endif %}
         {% if post.arxivurl %}
-          <a href="{{ post.arxivurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none;">arXiv</a>
+          <a href="{{ post.arxivurl }}" target="_blank" class="button">arXiv</a>
         {% endif %}
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px;">Abstract</button>
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px;">BibTeX</button>
-      </p>
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" class="button">Abstract</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" class="button">BibTeX</button>
+      </div>
 
+      <!-- Expandable Content -->
       <div id="content-{{ forloop.index }}" style="display: none; padding: 10px; margin-top: 10px;">
-        <!-- Abstract Section -->
         <div id="content-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 10px;">
           {{ post.abstract }}
         </div>
-
-        <!-- BibTeX Section -->
         <div id="content-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative;">
           <pre style="margin: 0; padding-right: 40px;">{{ post.bibtex }}</pre>
           <span id="copy-icon-{{ forloop.index }}" onclick="copyBibtex('content-{{ forloop.index }}-bibtex', 'copy-icon-{{ forloop.index }}')" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 18px; color: black;">📋</span>
@@ -83,7 +108,6 @@ author_profile: true
   <hr />
 {% endfor %}
 
-<!-- Script for toggle functionality -->
 <script>
   function toggleContent(id, type) {
     var container = document.getElementById(id);
