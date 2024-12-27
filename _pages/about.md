@@ -46,7 +46,9 @@ My work aims to develop interpretable and efficient generative models to enable 
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #6a0dad;">Oct. 2023</strong> 💻 Hosted webinar on LLMs at <a href="https://community.analyticsvidhya.com/c/datahour/harnessing-the-power-of-llms-a-deep-dive-into-practical-solutions/?utm_source=social" target="_blank" style="color: #6a0dad; text-decoration: none; font-weight: bold;">DataHour</a>.</li>
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #6a0dad;">Sep. 2023</strong> 🌟 Recognized as Women in Data Science Ambassador.</li>
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: 
-#6a0dad;">Mar. 2023</strong> 🗣️ Invited talk at <a href="https://www.northeastern.edu/" target="_blank" style="color: #6a0dad; text-decoration: none; font-weight: bold;">Northeastern</a> on MLOps.</li>    
+<li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+  <strong style="color: #6a0dad;">Mar. 2023</strong> 🗣️ Invited talk at <a href="https://www.northeastern.edu/" target="_blank" style="color: #6a0dad; text-decoration: none; font-weight: bold;">Northeastern</a> on MLOps.
+</li>  
 #6a0dad;">Feb. 2022</strong> 💼 Joined <a href="https://www.fidelity.com/" target="_blank" style="color: #6a0dad; text-decoration: none; font-weight: bold;">Fidelity Investments</a> as Data Scientist.</li>
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: 
 #6a0dad;">Dec. 2021</strong> 🎓 Graduated with M.S. in Data Science from <a href="https://www.northeastern.edu/" target="_blank" style="color: #6a0dad; text-decoration: none; font-weight: bold;">NEU</a>, Boston.</li>
