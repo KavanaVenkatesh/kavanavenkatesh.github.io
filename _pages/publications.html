@@ -16,8 +16,13 @@ author_profile: true
 <!-- Group Publications by Year -->
 {% assign grouped_papers = site.publications | group_by: 'year' %}
 {% for group in grouped_papers reversed %}
+  <!-- Grey Line Between Years -->
+  {% unless forloop.first %}
+    <hr style="border: none; border-top: 1px solid #ddd; margin: 20px 0;" />
+  {% endunless %}
+
   <!-- Year Section -->
-  <div style="display: flex; align-items: flex-start; margin-bottom: 5px; padding-top: 20px;">
+  <div style="display: flex; align-items: flex-start; margin-bottom: 5px;">
     <h2 style="text-align: right; color: lightgray; font-size: 2.5em; margin-right: 30px; min-width: 90px;">
       {{ group.name }}
     </h2>
@@ -25,7 +30,7 @@ author_profile: true
     <!-- Publications List -->
     <div style="flex-grow: 1;">
       {% for post in group.items %}
-        <div class="publication-item" style="margin-bottom: 10px;">
+        <div class="publication-item" style="margin-bottom: 5px;">
           <!-- Title -->
           <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal;">
             {{ post.title }}
@@ -75,10 +80,6 @@ author_profile: true
             </div>
           </div>
         </div>
-        <!-- Add Light Grey Line Between Years -->
-        {% unless forloop.last %}
-          <hr style="border: none; border-top: 1px solid #ddd; margin: 10px 0;" />
-        {% endunless %}
       {% endfor %}
     </div>
   </div>
