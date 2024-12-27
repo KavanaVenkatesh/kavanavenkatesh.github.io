@@ -1,20 +1,68 @@
 ---
-layout: archive
+layout: default
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-<h1>📚 Publications</h1>
+{% if site.author.googlescholar %}
+  <p style="font-style: italic; color: #555;">
+    For an up-to-date list of my research papers, please see my <a href="{{site.author.googlescholar}}" target="_blank" style="color: #6a0dad;">Google Scholar</a>. * denotes equal contribution.
+  </p>
+{% endif %}
 
-<div style="padding: 20px;">
-  <ul style="list-style: none; padding: 0;">
-    <li style="margin-bottom: 15px;">
-      <strong>2024:</strong> 📄 <a href="https://arxiv.org/abs/2412.09614" target="_blank" style="color: #007bff; text-decoration: none;">Context Canvas</a> - Enhancing diffusion models for semantic editing.
-    </li>
-    <li style="margin-bottom: 15px;">
-      <strong>2024:</strong> 📄 <a href="https://arxiv.org/abs/2412.09611" target="_blank" style="color: #007bff; text-decoration: none;">FluxSpace</a> - Integrating transformers for image generation.
-    </li>
-  </ul>
+<hr />
+
+<!-- Publications Section -->
+<div style="padding: 10px 0;">
+  {% for post in site.publications reversed %}
+  <div style="margin-bottom: 25px; padding: 15px; border-radius: 8px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    
+    <!-- Label for Conference -->
+    {% if post.tag %}
+      <span style="background-color: #4a7c59; color: #fff; padding: 5px 10px; border-radius: 20px; font-size: 0.9em;">{{ post.tag }}</span>
+    {% endif %}
+    
+    <!-- Title -->
+    <h3 style="color: #4a7c59; margin-top: 10px;">
+      <a href="{{ post.paperurl }}" target="_blank" style="color: #4a7c59; text-decoration: none;">{{ post.title }}</a>
+    </h3>
+
+    <!-- Authors -->
+    <p style="margin: 5px 0; color: #555;">
+      <strong>{{ post.authors }}</strong>
+      {% if post.coauthors %}
+        , {{ post.coauthors }}
+      {% endif %}
+    </p>
+
+    <!-- Venue and Year -->
+    <p style="font-style: italic; margin: 5px 0; color: #777;">
+      {{ post.venue }}, {{ post.year }}
+    </p>
+
+    <!-- Description -->
+    {% if post.description %}
+      <p style="color: #b76060; font-style: italic;">
+        // {{ post.description }}
+      </p>
+    {% endif %}
+
+    <!-- Links -->
+    <div>
+      {% if post.abs %}
+        <a href="{{ post.abs }}" target="_blank" style="border: 1px solid #ddd; padding: 5px 10px; margin-right: 5px; text-decoration: none; color: #555;">ABS</a>
+      {% endif %}
+      {% if post.arxiv %}
+        <a href="{{ post.arxiv }}" target="_blank" style="border: 1px solid #ddd; padding: 5px 10px; margin-right: 5px; text-decoration: none; color: #555;">ARXIV</a>
+      {% endif %}
+      {% if post.bib %}
+        <a href="{{ post.bib }}" target="_blank" style="border: 1px solid #ddd; padding: 5px 10px; margin-right: 5px; text-decoration: none; color: #555;">BIB</a>
+      {% endif %}
+      {% if post.pdf %}
+        <a href="{{ post.pdf }}" target="_blank" style="border: 1px solid #ddd; padding: 5px 10px; margin-right: 5px; text-decoration: none; color: #555;">PDF</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
 </div>
-
