@@ -30,15 +30,15 @@ author_profile: true
     <!-- Publications List -->
     <div style="flex-grow: 1;">
       {% for post in group.items %}
-        <div class="publication-item" style="margin-bottom: 5px;">
+        <div class="publication-item" style="margin-bottom: 2px;">
           <!-- Title -->
-          <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal;">
+          <h3 style="color: #d63384; font-size: 1em; font-weight: normal;">
             {{ post.title }}
           </h3>
 
           <!-- Authors -->
           {% if post.authors %}
-            <p style="margin: 0; color: #4a4a4a; font-size: 0.9em;">
+            <p style="margin: 0; color: #4a4a4a; font-size: 0.8em;">
               <strong>Kavana Venkatesh</strong>
               {% for author in post.authors %}
                 {% if author.name != "Kavana Venkatesh" %}
@@ -51,7 +51,7 @@ author_profile: true
 
           <!-- Venue -->
           {% if post.venue %}
-            <p style="margin: 0; font-style: italic; color: gray; font-size: 0.9em;">{{ post.venue }}</p>
+            <p style="margin: 0; font-style: italic; color: gray; font-size: 0.6em;">{{ post.venue }}</p>
           {% endif %}
 
           <!-- Buttons -->
