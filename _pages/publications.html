@@ -63,7 +63,7 @@ author_profile: true
         <!-- BibTeX Section -->
         <div id="content-{{ forloop.index }}-bibtex" style="display: none; white-space: pre-wrap; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative;">
           <pre style="margin: 0; padding-right: 40px;">{{ post.bibtex }}</pre>
-          <span onclick="copyBibtex('content-{{ forloop.index }}-bibtex')" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 18px; color: black;">📄</span>
+          <span onclick="copyBibtex('content-{{ forloop.index }}-bibtex')" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 18px; color: black;">📋</span>
         </div>
       </div>
 
@@ -97,6 +97,10 @@ author_profile: true
 
   function copyBibtex(id) {
     const bibtexText = document.getElementById(id).innerText;
-    navigator.clipboard.writeText(bibtexText);
+    navigator.clipboard.writeText(bibtexText).then(() => {
+      const copyIcon = document.querySelector(`#${id} span`);
+      copyIcon.innerText = '✔';
+      setTimeout(() => { copyIcon.innerText = '📋'; }, 2000);
+    });
   }
 </script>
