@@ -18,7 +18,7 @@ Feel free to explore my work, and reach out if you'd like to collaborate or just
 
 ---
 
-## <span style="color: #000000; font-size: 1.5em;">🔬 Research</span>
+## <span style="color: #6a0dad; font-size: 1.5em; display: flex; align-items: center;"><span style="margin-right: 10px;">🔬</span> Research</span>
 
 My research focuses on Large Language Models and extending the evolving technology in NLP to Computer Vision tasks, especially Diffusion Models. My advisor is <a href="https://pinguar.org/" target="_blank" style="color: #007bff; text-decoration: none;">Dr. Pinar Yanardag</a>. 
 
