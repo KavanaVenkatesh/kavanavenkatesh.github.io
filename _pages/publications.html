@@ -29,7 +29,7 @@ author_profile: true
     <!-- Display Details -->
     <div>
       <!-- Display Title -->
-      <h3 style="color: #d63384; font-size: 1.3em; font-weight: normal;">
+      <h3 style="color: #d63384; font-size: 1.2em; font-weight: normal;">
         {{ post.title }}
       </h3>
 
@@ -54,20 +54,20 @@ author_profile: true
       <!-- Buttons for Website, PDF, and Arxiv -->
       <p style="display: flex; gap: 10px; margin-top: 10px;">
         {% if post.websiteurl %}
-          <a href="{{ post.websiteurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid #000; border-radius: 5px; text-decoration: none; color: #000;">Website</a>
+          <a href="{{ post.websiteurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; color: black;">Website</a>
         {% endif %}
         {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid #000; border-radius: 5px; text-decoration: none; color: #000;">PDF</a>
+          <a href="{{ post.paperurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; color: black;">PDF</a>
         {% endif %}
         {% if post.arxivurl %}
-          <a href="{{ post.arxivurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid #000; border-radius: 5px; text-decoration: none; color: #000;">arXiv</a>
+          <a href="{{ post.arxivurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; color: black;">arXiv</a>
         {% endif %}
       </p>
 
       <!-- Abstract and BibTeX Toggle Buttons -->
       <p style="display: flex; gap: 10px; margin-top: 10px;">
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="padding: 5px 10px; border-radius: 5px;">Abstract</button>
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" style="padding: 5px 10px; border-radius: 5px;">BibTeX</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px;">Abstract</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px;">BibTeX</button>
       </p>
 
       <div id="content-{{ forloop.index }}" style="display: none; padding: 10px; margin-top: 10px;">
