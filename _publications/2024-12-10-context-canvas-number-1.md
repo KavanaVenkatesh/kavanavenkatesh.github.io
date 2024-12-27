@@ -7,8 +7,8 @@ authors:
     website: "https://yusufdalva.github.io/"
 venue: "arXiv preprint"
 description: "We propose a framework that uses knowledge graphs for improving text-to-image diffusion models."
-teaser: "/images/context-canvas-teaser.png"
-paperurl: "https://arxiv.org/abs/1234.5678"
+teaser: "/images/context-canvas-teaser.jpg"
+paperurl: "https://arxiv.org/abs/2412.09614"
 bibtexurl: "https://arxiv.org/abs/1234.5678"
 ---
 
