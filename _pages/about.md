@@ -17,37 +17,15 @@ My work aims to develop interpretable and efficient generative models to enable 
 - **Knowledge Distillation and Optimization of LLMs:** Exploring novel optimization techniques to develop smaller and efficient LLMs
 - **Applications of LLMs in vision:** Transferring the evolving techniques in NLP to vision, especially diffusion models for high-fidelity image generation
 
-## <span style="color: #6a0dad; font-size: 1.5em;">📰 News</span>
+## <span style="color: #6a0dad; font-size: 1.5em;">📰 Recent News</span>
 
-<table>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Dec. 2024</td>
-  <td>🎉 Two papers submitted to CVPR on enhancing diffusion models and semantic editing using transformers.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Oct. 2023</td>
-  <td>💻 Delivered a webinar on 'Harnessing the Power of LLMs' at Analytics Vidhya with 5K+ attendees.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Mar. 2024</td>
-  <td>🎙️ Invited talk at UMass Amherst on balancing open-source LLMs for responsible AI.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Sep. 2023</td>
-  <td>🌟 Recognized as Women in Data Science Ambassador for Greater Boston region.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Sep. 2023</td>
-  <td>🌟 Recognized as Women in Data Science Ambassador for Greater Boston region.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Feb. 2022</td>
-  <td>:briefcase: Started a new job as a Data Scientist focusing on NLP and Vision at Fidelity Investments, Boston.</td>
-</tr>
-<tr>
-  <td style="width: 120px; font-weight: bold;">Dec. 2021</td>
-  <td>🎓 Graduated with a Master's degree in Data Science from Northeastern University, Boston.</td>
-</tr>
-</table>
-
-
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px;">
+  <ul style="list-style: none; padding: 0;">
+    <li style="margin-bottom: 10px;"><strong>Dec. 2024</strong> 🎉 <span style="color: #444;">Two papers submitted to CVPR on enhancing diffusion models and semantic editing using transformers.</span></li>
+    <li style="margin-bottom: 10px;"><strong>Oct. 2023</strong> 💻 <span style="color: #444;">Delivered a webinar on 'Harnessing the Power of LLMs' at Analytics Vidhya with 5K+ attendees.</span></li>
+    <li style="margin-bottom: 10px;"><strong>Mar. 2024</strong> 🎙️ <span style="color: #444;">Invited talk at UMass Amherst on balancing open-source LLMs for responsible AI.</span></li>
+    <li style="margin-bottom: 10px;"><strong>Sep. 2023</strong> 🌟 <span style="color: #444;">Recognized as Women in Data Science Ambassador for Greater Boston region.</span></li>
+    <li style="margin-bottom: 10px;"><strong>Feb. 2022</strong> 💼 <span style="color: #444;">Started a new job as a Data Scientist focusing on NLP and Vision at Fidelity Investments, Boston.</span></li>
+    <li style="margin-bottom: 10px;"><strong>Dec. 2021</strong> 🎓 <span style="color: #444;">Graduated with a Master's degree in Data Science from Northeastern University, Boston.</span></li>
+  </ul>
+</div>
