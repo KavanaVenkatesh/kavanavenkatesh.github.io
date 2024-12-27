@@ -19,10 +19,7 @@ My work aims to develop interpretable and efficient generative models to enable 
 
 ---
 
-## <span style="color: #000000; font-size: 1.5em; display: flex; align-items: center;"><span style="margin-right: 10px;">📰</span> News</span>
-
 <p style="color: #d63384; font-weight: bold; text-align: center; margin-bottom: 15px;">🌟 I am actively looking for Research Internships for Summer 2025. Feel free to reach out if you have suitable opportunities!</p>
-
 
 ## <span style="color: #6a0dad; font-size: 1.5em; display: flex; align-items: center;"><span style="margin-right: 10px;">📰</span> News</span>
 
