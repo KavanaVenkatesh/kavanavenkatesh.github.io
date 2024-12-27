@@ -1,0 +1,65 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div style="font-style: italic; color: #666; text-align: center; margin-bottom: 20px;">
+    For an up-to-date list of my research papers, please see my
+    <a href="{{site.author.googlescholar}}" target="_blank" style="color: #6a0dad;">Google Scholar</a>. * denotes equal contribution.
+  </div>
+{% endif %}
+
+<!-- Publication List -->
+<div style="display: flex; flex-direction: column; gap: 20px;">
+  {% for post in site.publications reversed %}
+  <div style="display: flex; align-items: flex-start; gap: 15px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+    
+    <!-- Teaser Image -->
+    {% if post.teaser %}
+      <div style="flex-shrink: 0;">
+        <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" style="width: 120px; height: auto; border-radius: 5px;">
+      </div>
+    {% endif %}
+    
+    <!-- Publication Content -->
+    <div>
+      <!-- Title -->
+      <h3 style="color: #000000; margin: 0 0 5px 0;">
+        <strong>{{ post.title }}</strong>
+      </h3>
+      
+      <!-- Authors -->
+      <p style="font-size: 0.9em; margin: 0 0 5px 0;">
+        <strong>{{ post.authors | join: ', ' }}</strong>
+      </p>
+      
+      <!-- Venue -->
+      {% if post.venue %}
+        <p style="font-style: italic; color: #666; margin: 0 0 5px 0;">
+          {{ post.venue }}
+        </p>
+      {% endif %}
+      
+      <!-- Description -->
+      {% if post.description %}
+        <p style="font-size: 0.9em; margin: 0 0 10px 0; color: #333;">
+          {{ post.description }}
+        </p>
+      {% endif %}
+      
+      <!-- Buttons -->
+      <div style="margin-top: 10px;">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank" style="padding: 8px 12px; border: none; border-radius: 5px; background-color: #007bff; color: #ffffff; text-decoration: none; font-size: 0.85em; margin-right: 10px;">arXiv PDF</a>
+        {% endif %}
+        {% if post.bibtex %}
+          <a href="{{ post.bibtex }}" target="_blank" style="padding: 8px 12px; border: none; border-radius: 5px; background-color: #6a0dad; color: #ffffff; text-decoration: none; font-size: 0.85em;">BibTeX</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
