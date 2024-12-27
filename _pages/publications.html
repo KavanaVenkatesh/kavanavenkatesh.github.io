@@ -52,12 +52,12 @@ author_profile: true
       {% endif %}
 
       <!-- Buttons for Website, PDF, and Arxiv -->
-      <p>
+      <p style="display: flex; gap: 10px; margin-top: 10px;">
         {% if post.websiteurl %}
-          <a href="{{ post.websiteurl }}" target="_blank" style="background: #6a0dad; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 10px;">Website</a>
+          <a href="{{ post.websiteurl }}" target="_blank" style="background: #6a0dad; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">Website</a>
         {% endif %}
         {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank" style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; margin-right: 10px;">PDF</a>
+          <a href="{{ post.paperurl }}" target="_blank" style="background: #007bff; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">PDF</a>
         {% endif %}
         {% if post.arxivurl %}
           <a href="{{ post.arxivurl }}" target="_blank" style="background: #28a745; color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none;">arXiv</a>
@@ -65,19 +65,19 @@ author_profile: true
       </p>
 
       <!-- Abstract and BibTeX Toggle Buttons -->
-      <p>
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="margin-right: 10px;">Abstract</button>
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')">BibTeX</button>
+      <p style="display: flex; gap: 10px; margin-top: 10px;">
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="padding: 5px 10px; border-radius: 5px;">Abstract</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" style="padding: 5px 10px; border-radius: 5px;">BibTeX</button>
       </p>
 
-      <div id="content-{{ forloop.index }}" style="display: none; padding: 10px; margin-top: 10px; border-radius: 8px;">
+      <div id="content-{{ forloop.index }}" style="display: none; padding: 10px; margin-top: 10px;">
         <!-- Abstract Section -->
         <div id="content-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 10px;">
           {{ post.abstract }}
         </div>
 
         <!-- BibTeX Section -->
-        <div id="content-{{ forloop.index }}-bibtex" style="display: none; white-space: pre-wrap; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative;">
+        <div id="content-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative;">
           <pre style="margin: 0; padding-right: 40px;">{{ post.bibtex }}</pre>
           <span id="copy-icon-{{ forloop.index }}" onclick="copyBibtex('content-{{ forloop.index }}-bibtex', 'copy-icon-{{ forloop.index }}')" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 18px; color: black;">📋</span>
         </div>
