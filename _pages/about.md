@@ -17,7 +17,7 @@ My work aims to develop interpretable and efficient generative models to enable 
 - **Knowledge Distillation and Optimization of LLMs:** Exploring novel optimization techniques to develop smaller and efficient LLMs
 - **Applications of LLMs in vision:** Transferring the evolving techniques in NLP to vision, especially diffusion models for high-fidelity image generation
 
-## <span style="color: #6a0dad; font-size: 1.5em;">📰 Recent News</span>
+## <span style="color: #6a0dad; font-size: 1.5em;">📰 News</span>
 
 <div style="border: 1px solid #ddd; border-radius: 8px; padding: 15px;">
   <ul style="list-style: none; padding: 0;">
