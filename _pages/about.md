@@ -19,13 +19,24 @@ My work aims to develop interpretable and efficient generative models to enable 
 
 ## <span style="color: #6a0dad; font-size: 1.5em;">📰 Recent News</span>
 
-**Dec. 2024** 🎉 Two papers submitted to CVPR on enhancing diffusion models and semantic editing using transformers.
+### May 2024
+📄 [FreshLLMs](link-to-paper) got accepted to ACL 2024 Findings! 🎉
 
-**Oct. 2023** 💻 Delivered a webinar on 'Harnessing the Power of LLMs' at Analytics Vidhya with 5K+ attendees.
+### February 2024
+💼 I am now serving as an Area Chair for [ACL Rolling Review (ARR)](link-to-arr)
 
-**Mar. 2024** 🎙️ Invited talk at UMass Amherst on balancing open-source LLMs for responsible AI.
+### January 2024
+📄 [Plan-MoE](link-to-paper) got accepted to ICLR 2024! 🎉
 
-**Sep. 2023** 🌟 Recognized as Women in Data Science Ambassador for Greater Boston region.
+### November 2023
+🗣️ Invited talk at Graph Neural Networks Reading Group, Google
 
+### October 2023
+📄 New [preprint](link-to-preprint) on LLM factuality (FreshLLMs)
 
+### August 2023
+💼 I joined Google in Mountain View, CA as a Research Scientist
+
+### July 2023
+🎓 I successfully defended my PhD thesis! 🎉 📝
 
