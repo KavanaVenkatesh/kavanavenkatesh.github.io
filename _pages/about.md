@@ -17,7 +17,7 @@ My work aims to develop interpretable and efficient generative models to enable 
 - **Knowledge Distillation and Optimization of LLMs:** Exploring novel optimization techniques to develop smaller and efficient LLMs
 - **Applications of LLMs in vision:** Transferring the evolving techniques in NLP to vision, especially diffusion models for high-fidelity image generation
 
-## <span style="color: #6a0dad; font-size: 1.5em;">📰 Recent News</span>
+## <span style="color: #6a0dad; font-size: 1.5em;">📰 News</span>
 
 <table>
 <tr>
@@ -36,10 +36,18 @@ My work aims to develop interpretable and efficient generative models to enable 
   <td style="width: 120px; font-weight: bold;">Sep. 2023</td>
   <td>🌟 Recognized as Women in Data Science Ambassador for Greater Boston region.</td>
 </tr>
+<tr>
+  <td style="width: 120px; font-weight: bold;">Sep. 2023</td>
+  <td>🌟 Recognized as Women in Data Science Ambassador for Greater Boston region.</td>
+</tr>
+<tr>
+  <td style="width: 120px; font-weight: bold;">Feb. 2022</td>
+  <td>:briefcase: Started a new job as a Data Scientist focusing on NLP and Vision at Fidelity Investments, Boston.</td>
+</tr>
+<tr>
+  <td style="width: 120px; font-weight: bold;">Dec. 2021</td>
+  <td>🎓 Graduated with a Master's degree in Data Science from Northeastern University, Boston.</td>
+</tr>
 </table>
-### August 2023
-💼 I joined Google in Mountain View, CA as a Research Scientist
 
-### July 2023
-🎓 I successfully defended my PhD thesis! 🎉 📝
 
