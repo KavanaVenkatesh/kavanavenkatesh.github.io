@@ -7,7 +7,7 @@ authors:
     website: ""
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: 'arXiv preprint'
+venue: 'In arXiv preprint arXiv:2412.09611'
 arxivurl: 'https://arxiv.org/abs/2412.09611'
 websiteurl: "https://fluxspace.github.io/"
 paperurl: "https://arxiv.org/pdf/2412.09611"
