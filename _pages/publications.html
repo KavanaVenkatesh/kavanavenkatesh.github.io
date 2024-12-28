@@ -41,7 +41,7 @@ author_profile: true
         <!-- Display Authors with Links -->
         {% if post.authors %}
           <p style="margin: 0; color: #4a4a4a; font-size: 0.9em;">
-            <strong>Kavana Venkatesh</strong>
+            <strong>Kavana Venkatesh,</strong>
             {% for author in post.authors %}
               {% if author.name != "Kavana Venkatesh" %}
                 <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
@@ -67,8 +67,8 @@ author_profile: true
           {% if post.arxivurl %}
             <a href="{{ post.arxivurl }}" target="_blank" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">arXiv</a>
           {% endif %}
-          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'abstract')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">Abstract</button>
-          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'bibtex')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">BibTeX</button>
+          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'abstract')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">Abstract</button>
+          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'bibtex')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">BibTeX</button>
         </p>
 
         <div id="content-{{ group.name }}-{{ forloop.index }}" style="padding: 5px; margin-top: 5px;">
