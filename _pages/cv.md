@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-<p>You can download my full CV <a href="/files/Resume-Kavana-Venkatesh.pdf" target="_blank" style="color:blue; text-decoration:underline;">here</a>.</p>
+<!-- <p>You can download my full CV <a href="/files/Resume-Kavana-Venkatesh.pdf" target="_blank" style="color:blue; text-decoration:underline;">here</a>.</p> -->
 
 ## Education
 - **Ph.D. in Computer Science and Applications**, Virginia Tech, Blacksburg, VA, GPA: 4.00 *(Expected: 2028)*  
