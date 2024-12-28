@@ -62,11 +62,11 @@ author_profile: true
         {% if post.arxivurl %}
           <a href="{{ post.arxivurl }}" target="_blank" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">arXiv</a>
         {% endif %}
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">Abstract</button>
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">BibTeX</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}-abstract')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">Abstract</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}-bibtex')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">BibTeX</button>
       </p>
 
-      <div id="content-{{ forloop.index }}" style="padding: 5px; margin-top: 5px; display: none;">
+      <div id="content-{{ forloop.index }}" style="padding: 5px; margin-top: 5px;">
         <!-- Abstract Section -->
         <div id="content-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 5px; font-size: 0.9em;">
           {{ post.abstract }}
@@ -85,18 +85,11 @@ author_profile: true
 
 <!-- Script for toggle functionality -->
 <script>
-  function toggleContent(id, type) {
-    const parent = document.getElementById(id);
-    const abstract = parent.querySelector(`#${id}-abstract`);
-    const bibtex = parent.querySelector(`#${id}-bibtex`);
-    
-    if (type === 'abstract') {
-      abstract.style.display = 'block';
-      bibtex.style.display = 'none';
-    } else if (type === 'bibtex') {
-      bibtex.style.display = 'block';
-      abstract.style.display = 'none';
-    }
+  function toggleContent(id) {
+    const sections = document.querySelectorAll(`#${id} > div`);
+    sections.forEach(section => section.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+    event.target.nextElementSibling.style.display = 'block';
   }
 
   function copyBibtex(id, iconId) {
