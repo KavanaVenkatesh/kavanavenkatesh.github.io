@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<p><a href="/assets/cv.pdf" target="_blank" style="color:blue; text-decoration:underline;">You can download my full CV here</a></p>
+
 ## Education
 - **Ph.D. in Computer Science and Applications**, Virginia Tech, Blacksburg, VA, GPA: 4.00 *(Expected: 2028)*  
   *Research Focus*: Interpretable and high-fidelity generative AI at the intersection of NLP and Computer Vision, leveraging Large Language Models and Diffusion Models 
@@ -39,18 +41,21 @@ redirect_from:
 ---
 
 ## Research Experience
-- **Research Assistant**, SJCE & IIT Hyderabad *(2017 - 2018)*  
-  - Designed frameworks integrating ML and high-voltage systems for automated safety monitoring of electrical circuits, improving fault detection accuracy.  
-  - Optimized hybrid solar-wind power generators using deep learning techniques, improving output efficiency by 27%.  
-  - Collaborated with chemists and computer scientists to develop ML-based approaches for drug discovery, generating over 100K synthetic data samples using GANs.  
+- **Graduate Research Assistant**, Virginia Tech, Blacksburg, VA *(Aug 2024 - Present)*  
+  - Developing novel frameworks for high-fidelity domain-specific text-to-image generative tasks at the intersection of NLP and vision, by leveraging advancements in Large Language Models and Diffusion Models.  
+  - Researching methodologies to enhance domain-specific image generation capabilities of Diffusion Models by augmenting them with the instructional following capabilities of LLMs and innovative prompt engineering strategies.  
+  - Exploring sophisticated techniques to enhance interpretability of complex agentic frameworks for coherent and efficient task completion.  
 
+- **Research Assistant**, SJCE, Mysuru, India *(Aug 2017 – Apr 2018)* (Advisor: Dr. Neethi M)  
+  - Studied the effects of signal variation on the performance and longevity of electrical components by conducting extensive experiments in carefully simulated environments.  
+  - Designed novel frameworks that synergize machine learning and high voltage systems to automate and enhance the safety monitoring of complex, large-scale electrical circuits.  
 
-- **Data Scientist**, Fidelity Investments *(Feb 2022 - Oct 2023)*  
-  - Built end-to-end NLP-based systems to extract, classify, and analyze financial data from reports using OCR, YOLOv5, GNNs, and Transformers, saving over 1000+ hours of manual labor.  
-  - Created a scalable recommendation system and anomaly detection pipeline to manage portfolios worth over $850M, generating additional revenue.  
-  - Fine-tuned and deployed LLM applications for code translation, summarization, and chatbot functionalities, leveraging PEFT, text-generation-inference, and agent frameworks.  
-  - Led and mentored a team of interns, guiding them in LLM research, solution design, and compliance-focused AI development, presenting findings to senior management.  
-  - Researched AI advancements and automated business processes as part of the Asset Management, evaluating solutions with custom KPIs and dashboards. 
+- **Summer Research Fellow**, IIT, Hyderabad, India *(May – Aug 2017)* (Advisor: Dr. Sumohana Channappayya)  
+  - Optimized hybrid solar-wind power generators by collecting large streaming data from numerical relays, using Deep Neural Networks. Boosted output voltage by 27%, beating existing benchmarks.  
+  - Collaborated with chemists and computer scientists to develop cutting-edge machine learning and vision methodologies to identify precise drug molecular structures with minimal side effects.  
+  - Contributed to novel drug discovery efforts by synthesizing over 100K high-quality synthetic data samples with GANs.  
+
+---
 
 ## Skills
 - **Machine Learning & AI**: NLP, Generative AI, RAG systems, Transformers, Diffusion Models.  
@@ -88,4 +93,4 @@ redirect_from:
 ## Service & Leadership
 - **Women in Data Science Ambassador**, Greater Boston *(Feb 2024 - Present)*.  
 - **Mentor**, Women in Big Data *(May - Sep 2024)*.  
-- **AI Council Member**, Fidelity Investments *(2023)* - Researching AI strategies and compliance.  
+- **AI Council Member**, Fidelity Investments *(2023)* - Researching AI strategies and compliance.
