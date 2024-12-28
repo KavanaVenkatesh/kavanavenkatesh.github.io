@@ -26,6 +26,6 @@ main:
   # - title: "Guide"
   #  url: /markdown/
 
-  - title: "Fun Stuff"
-    url: /fun-stuff/
-    style: "float: right;"
+  #- title: "Fun Stuff"
+  #  url: /fun-stuff/
+    
