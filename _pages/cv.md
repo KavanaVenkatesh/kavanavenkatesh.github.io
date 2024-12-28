@@ -93,4 +93,3 @@ redirect_from:
 ## Service & Leadership
 - **Women in Data Science Ambassador**, Greater Boston *(Feb 2024 - Present)*.  
 - **Mentor**, Women in Big Data *(May - Sep 2024)*.  
-- **AI Council Member**, Fidelity Investments *(2023)* - Researching AI strategies and compliance.
