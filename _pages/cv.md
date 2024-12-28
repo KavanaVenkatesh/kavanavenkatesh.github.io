@@ -61,9 +61,9 @@ redirect_from:
 ---
 
 ## Publications
-- **Context Canvas** *(CVPR 2024 - Submitted)*:  
+- **Context Canvas** **:  
   - Enhancing text-to-image diffusion models with knowledge graph-based RAG and self-correction.  
-- **FluxSpace** *(CVPR 2024 - Submitted)*:  
+- **FluxSpace** **:  
   - Domain-agnostic image editing using rectified flow transformers for semantic control.  
 - **Fault Analysis and Predictive Maintenance** *(IEEE Xplore, 2018)*:  
   - Pre-fault detection of electrical systems; awarded Best Paper at ICEECCOT-2018.  
