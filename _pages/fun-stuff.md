@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Kavana"
-permalink: /kavana/
+title: "Fun Stuff"
+permalink: /fun-stuff/
 author_profile: true
 order: 99
 ---
