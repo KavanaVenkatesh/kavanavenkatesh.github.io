@@ -3,6 +3,7 @@ layout: archive
 title: "Kavana"
 permalink: /kavana/
 author_profile: true
+order: 99
 ---
 
 <style>
