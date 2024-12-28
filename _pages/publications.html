@@ -73,12 +73,12 @@ author_profile: true
 
         <div id="content-{{ group.name }}-{{ forloop.index }}" style="padding: 5px; margin-top: 5px;">
           <!-- Abstract Section -->
-          <div id="content-{{ group.name }}-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 5px; font-size: 0.9em;">
+          <div id="content-{{ group.name }}-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 5px; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word;">
             {{ post.abstract }}
           </div>
 
           <!-- BibTeX Section -->
-          <div id="content-{{ group.name }}-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; position: relative; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word;">
+          <div id="content-{{ group.name }}-{{ forloop.index }}-bibtex" style="display: none; border: 1px dotted #ccc; padding: 5px; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word;">
             <button onclick="copyBibTeX('bibtex-content-{{ group.name }}-{{ forloop.index }}')" style="position: absolute; top: 5px; right: 5px; background: none; border: none; cursor: pointer;">
               <span id="copy-icon-{{ group.name }}-{{ forloop.index }}">📋</span>
             </button>
