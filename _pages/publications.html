@@ -86,3 +86,17 @@ author_profile: true
     <hr style="margin: 2px 0;" />
   {% endfor %}
 {% endfor %}
+
+<script>
+function toggleContent(id, type) {
+  const abstract = document.getElementById(id + '-abstract');
+  const bibtex = document.getElementById(id + '-bibtex');
+  if (type === 'abstract') {
+    abstract.style.display = abstract.style.display === 'block' ? 'none' : 'block';
+    bibtex.style.display = 'none';
+  } else {
+    bibtex.style.display = bibtex.style.display === 'block' ? 'none' : 'block';
+    abstract.style.display = 'none';
+  }
+}
+</script>
