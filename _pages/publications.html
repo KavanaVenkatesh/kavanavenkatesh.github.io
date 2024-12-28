@@ -19,7 +19,9 @@ author_profile: true
 <!-- Group papers by year -->
 {% assign grouped = site.publications | group_by: 'year' %}
 {% for group in grouped reversed %}
-  <h2 style="position: relative; margin-bottom: 5px;">{{ group.name }}<span style="position: absolute; right: 0; color: #ddd; font-size: 2em;">{{ group.name }}</span></h2>
+  <div style="position: relative; margin-bottom: 10px;">
+    <span style="position: absolute; right: 0; color: #ddd; font-size: 2em;">{{ group.name }}</span>
+  </div>
   {% for post in group.items %}
     <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 2px;">
       <!-- Display Teaser Image -->
@@ -32,7 +34,7 @@ author_profile: true
       <!-- Display Details -->
       <div>
         <!-- Display Title -->
-        <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal;">
+        <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal; margin-top: 0;">
           {{ post.title }}
         </h3>
 
