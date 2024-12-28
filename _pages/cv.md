@@ -61,9 +61,9 @@ redirect_from:
 ---
 
 ## Publications
-- **Context Canvas** **:  
+- **Context Canvas**:  
   - Enhancing text-to-image diffusion models with knowledge graph-based RAG and self-correction.  
-- **FluxSpace** **:  
+- **FluxSpace**:  
   - Domain-agnostic image editing using rectified flow transformers for semantic control.  
 - **Fault Analysis and Predictive Maintenance** *(IEEE Xplore, 2018)*:  
   - Pre-fault detection of electrical systems; awarded Best Paper at ICEECCOT-2018.  
