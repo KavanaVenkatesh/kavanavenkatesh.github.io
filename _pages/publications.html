@@ -29,7 +29,7 @@ author_profile: true
     <!-- Display Details -->
     <div>
       <!-- Display Title -->
-      <h3 style="color: #d63384; font-size: 1.2em; font-weight: normal;">
+      <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal;">
         {{ post.title }}
       </h3>
 
@@ -48,33 +48,33 @@ author_profile: true
 
       <!-- Display Venue (if applicable) -->
       {% if post.venue %}
-        <p style="margin: 0; font-style: italic; color: gray; font-size: 0.85em;">{{ post.venue }}</p>
+        <p style="margin: 0; font-style: italic; color: gray; font-size: 0.9em;">{{ post.venue }}</p>
       {% endif %}
 
       <!-- Buttons for Website, PDF, arXiv, Abstract, and BibTeX -->
       <p style="display: flex; gap: 10px; margin-top: 10px;">
         {% if post.websiteurl %}
-          <a href="{{ post.websiteurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.9em;">Website</a>
+          <a href="{{ post.websiteurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">Website</a>
         {% endif %}
         {% if post.paperurl %}
-          <a href="{{ post.paperurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.9em;">PDF</a>
+          <a href="{{ post.paperurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">PDF</a>
         {% endif %}
         {% if post.arxivurl %}
-          <a href="{{ post.arxivurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.9em;">arXiv</a>
+          <a href="{{ post.arxivurl }}" target="_blank" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">arXiv</a>
         {% endif %}
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; font-size: 0.9em;">Abstract</button>
-        <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; font-size: 0.9em;">BibTeX</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}-abstract')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">Abstract</button>
+        <button onclick="toggleContent('content-{{ forloop.index }}-bibtex')" style="padding: 5px 10px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">BibTeX</button>
       </p>
 
-      <div id="content-{{ forloop.index }}" style="display: none; padding: 10px; margin-top: 10px;">
+      <div id="content-{{ forloop.index }}" style="padding: 10px; margin-top: 10px;">
         <!-- Abstract Section -->
-        <div id="content-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 10px;">
+        <div id="content-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 10px; font-size: 0.9em;">
           {{ post.abstract }}
         </div>
 
         <!-- BibTeX Section -->
-        <div id="content-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative;">
-          <pre style="margin: 0; padding-right: 40px; font-size: 0.85em;">{{ post.bibtex }}</pre>
+        <div id="content-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative; font-size: 0.9em;">
+          <pre style="margin: 0; padding-right: 40px;">{{ post.bibtex }}</pre>
           <span id="copy-icon-{{ forloop.index }}" onclick="copyBibtex('content-{{ forloop.index }}-bibtex', 'copy-icon-{{ forloop.index }}')" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 18px; color: black;">📋</span>
         </div>
       </div>
@@ -85,18 +85,12 @@ author_profile: true
 
 <!-- Script for toggle functionality -->
 <script>
-  function toggleContent(id, type) {
-    var container = document.getElementById(id);
-    var abstract = document.getElementById(id + '-abstract');
-    var bibtex = document.getElementById(id + '-bibtex');
-
-    container.style.display = "block";
-    if (type === 'abstract') {
-      abstract.style.display = "block";
-      bibtex.style.display = "none";
-    } else if (type === 'bibtex') {
-      bibtex.style.display = "block";
-      abstract.style.display = "none";
+  function toggleContent(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "block") {
+      element.style.display = "none";
+    } else {
+      element.style.display = "block";
     }
   }
 
