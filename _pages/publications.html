@@ -34,7 +34,7 @@ author_profile: true
       <!-- Display Details -->
       <div>
         <!-- Display Title -->
-        <h3 style="color: #d63384; font-size: 1.0em; font-weight: normal; margin-top: 0;">
+        <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal; margin-top: 0;">
           {{ post.title }}
         </h3>
 
@@ -80,14 +80,13 @@ author_profile: true
           <!-- BibTeX Section -->
           <div id="content-{{ group.name }}-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; position: relative; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word;">
             <button onclick="copyBibTeX('bibtex-content-{{ group.name }}-{{ forloop.index }}')" style="position: absolute; top: 5px; right: 5px; background: none; border: none; cursor: pointer;">
-              <span id="copy-icon-{{ group.name }}-{{ forloop.index }}">📋</span>
+              <img src="/assets/icons/copy-icon.png" id="copy-icon-{{ group.name }}-{{ forloop.index }}" style="width: 16px; height: 16px;">
             </button>
             <pre id="bibtex-content-{{ group.name }}-{{ forloop.index }}" style="margin: 0; padding: 5px;">{{ post.bibtex }}</pre>
           </div>
         </div>
       </div>
     </div>
-    <hr style="margin: 2px 0;" />
   {% endfor %}
 {% endfor %}
 
@@ -108,8 +107,8 @@ function copyBibTeX(id) {
   const text = document.getElementById(id).innerText;
   navigator.clipboard.writeText(text).then(() => {
     const icon = document.getElementById(`copy-icon-${id.split('-').slice(2).join('-')}`);
-    icon.textContent = '✔️';
-    setTimeout(() => icon.textContent = '📋', 2000);
+    icon.src = '/assets/icons/check-icon.png';
+    setTimeout(() => icon.src = '/assets/icons/copy-icon.png', 2000);
   });
 }
 </script>
