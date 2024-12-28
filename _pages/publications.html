@@ -65,20 +65,19 @@ author_profile: true
           {% if post.arxivurl %}
             <a href="{{ post.arxivurl }}" target="_blank" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">arXiv</a>
           {% endif %}
-          <button onclick="toggleContent('content-{{ forloop.index }}', 'abstract')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">Abstract</button>
-          <button onclick="toggleContent('content-{{ forloop.index }}', 'bibtex')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">BibTeX</button>
+          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'abstract')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">Abstract</button>
+          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'bibtex')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; font-size: 0.85em;">BibTeX</button>
         </p>
 
-        <div id="content-{{ forloop.index }}" style="padding: 5px; margin-top: 5px;">
+        <div id="content-{{ group.name }}-{{ forloop.index }}" style="padding: 5px; margin-top: 5px;">
           <!-- Abstract Section -->
-          <div id="content-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 5px; font-size: 0.9em;">
+          <div id="content-{{ group.name }}-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 5px; font-size: 0.9em;">
             {{ post.abstract }}
           </div>
 
           <!-- BibTeX Section -->
-          <div id="content-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 5px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative; font-size: 0.9em;">
+          <div id="content-{{ group.name }}-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 5px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; overflow-x: auto; position: relative; font-size: 0.9em;">
             <pre style="margin: 0; padding-right: 40px;">{{ post.bibtex }}</pre>
-            <span id="copy-icon-{{ forloop.index }}" onclick="copyBibtex('content-{{ forloop.index }}-bibtex', 'copy-icon-{{ forloop.index }}')" style="position: absolute; top: 10px; right: 10px; cursor: pointer; font-size: 18px; color: black;">📋</span>
           </div>
         </div>
       </div>
