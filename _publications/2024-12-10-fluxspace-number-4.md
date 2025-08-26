@@ -3,7 +3,7 @@ title: "FluxSpace: Disentangled Image Editing in Rectified Flow Models"
 authors:
   - name: "Yusuf Dalva"
     website: "https://yusufdalva.github.io/"
-  - name: "Kavana Venkatesh"
+  - name: "<b style='color:#1a73e8;'>Kavana Venkatesh</b>"
     website: "https://kavanavenkatesh.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
