@@ -42,7 +42,9 @@ author_profile: False
         {% if post.authors %}
           <p style="margin: 0; color: #4a4a4a; font-size: 0.9em;">
             {% for author in post.authors %}
-              {% if author.website %}
+              {% if author.name == "Kavana Venkatesh" %}
+                <span style="font-weight: bold; color: #1a73e8;">{{ author.name }}</span>
+              {% elsif author.website %}
                 <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
               {% else %}
                 {{ author.name }}
@@ -51,6 +53,7 @@ author_profile: False
             {% endfor %}
           </p>
         {% endif %}
+
 
         <!-- Display Venue (if applicable) -->
         {% if post.venue %}
