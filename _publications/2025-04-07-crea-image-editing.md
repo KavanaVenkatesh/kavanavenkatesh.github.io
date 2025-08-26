@@ -7,8 +7,8 @@ authors:
     website: "https://www.linkedin.com/in/connor-dunlop-3a2880268/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: 'In arXiv preprint arXiv:2504.05306'
-arxivurl: 'https://arxiv.org/abs/2504.05306'
+venue: "arXiv preprint arXiv:2504.05306"
+arxivurl: "https://arxiv.org/abs/2504.05306"
 websiteurl: "https://crea-diffusion.github.io/"
 paperurl: "https://arxiv.org/pdf/2504.05306"
 year: 2025
