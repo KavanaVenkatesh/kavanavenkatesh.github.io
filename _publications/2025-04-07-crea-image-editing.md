@@ -4,7 +4,7 @@ authors:
   - name: "Kavana Venkatesh"
     website: ""
   - name: "Connor Dunlop"
-    website: "[https://yusufdalva.github.io/](https://www.linkedin.com/in/connor-dunlop-3a2880268/)"
+    website: "https://www.linkedin.com/in/connor-dunlop-3a2880268/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
 venue: 'In arXiv preprint arXiv:2504.05306'
