@@ -4,7 +4,7 @@ authors:
   - name: "Yusuf Dalva"
     website: "https://yusufdalva.github.io/"
   - name: "Kavana Venkatesh"
-    website: ""
+    website: "https://kavanavenkatesh.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
 venue: "arXiv preprint arXiv:2412.09611"
