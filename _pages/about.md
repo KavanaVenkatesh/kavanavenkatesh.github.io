@@ -18,7 +18,7 @@ Feel free to explore my work, and reach out if you'd like to collaborate or just
 
 ---
 
-<p style="color: #d63384; text-align: center; margin-bottom: 15px;">I am actively looking for Research Internships for Summer 2025. Feel free to reach out if you have suitable opportunities!</p>
+<p style="color: #d63384; text-align: center; margin-bottom: 15px;">This summer, I enjoyed interning at Amazon's Air Science & Tech as an Applied Scientist Intern at their Bellevue, WA office, where I enhanced Amazon Air's daily demand planning using efficient RL and ML techniques!</p>
 
 ## <span style="color: #6a0dad; font-size: 1.5em; display: flex; align-items: center;"><span style="margin-right: 10px;">🔬</span> Research</span>
 
