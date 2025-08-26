@@ -41,12 +41,13 @@ author_profile: False
         <!-- Display Authors with Links -->
         {% if post.authors %}
           <p style="margin: 0; color: #4a4a4a; font-size: 0.9em;">
-            <strong>Kavana Venkatesh,</strong>
             {% for author in post.authors %}
-              {% if author.name != "Kavana Venkatesh" %}
+              {% if author.website %}
                 <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
-                {% if forloop.last == false %}, {% endif %}
+              {% else %}
+                {{ author.name }}
               {% endif %}
+              {% if forloop.last == false %}, {% endif %}
             {% endfor %}
           </p>
         {% endif %}
