@@ -1,7 +1,7 @@
 ---
 title: "Context Canvas: Enhancing Text-to-Image Diffusion Models with Knowledge Graph-Based RAG"
 authors:
-  - name: "Kavana Venkatesh"
+  - name: "<b style='color:#1a73e8;'>Kavana Venkatesh*</b>"
     website: "https://kavanavenkatesh.github.io/"
   - name: "Yusuf Dalva"
     website: "https://yusufdalva.github.io/"
