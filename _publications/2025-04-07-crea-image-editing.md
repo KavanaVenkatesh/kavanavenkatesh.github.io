@@ -2,7 +2,6 @@
 title: "CREA: A Collaborative Multi-Agent Framework for Creative Content Generation with Diffusion Models"
 authors:
   - name: "Kavana Venkatesh*"
-    website: ""
   - name: "Connor Dunlop*"
     website: "https://www.linkedin.com/in/connor-dunlop-3a2880268/"
   - name: "Pinar Yanardag"
