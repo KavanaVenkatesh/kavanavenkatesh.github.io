@@ -2,7 +2,7 @@
 title: "Fault Analysis and Predictive Maintenance of Induction Motor using Machine Learning"
 authors:
   - name: "Kavana Venkatesh"
-    website: ""
+    website: "https://kavanavenkatesh.github.io/"
   - name: "Neethi M"
     website: "https://sjce.ac.in/ee-faculty/m-neethi/"
 venue: 'In Proceedings of the International Conference on Electrical, Electronics, Communication, Computer, and Optimization Techniques: ICEECCOT 2018'
