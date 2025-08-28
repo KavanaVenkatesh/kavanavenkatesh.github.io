@@ -20,6 +20,17 @@ redirect_from:
 ---
 
 ## Professional Experience
+
+- **Applied Scientist Intern**, Amazon Science *(May - Aug 2025)*  
+  - Spearheaded strategic daily demand planning and aviation resource optimization frameworks for Amazon Air using
+novel applications of RL and ML, enabling scale-aware, real-time control over 80%+ of global air package flow.
+  - Developed a novel learning-to-optimize pipeline that predicts attainment and multi-dimensional speed using kernelized
+bandit models to optimize actions under strict constraints, significantly improving network-wide resource allocation.
+  - Enabled dynamic tradeoff control between fulfillment speed and capacity usage, aligning flight decisions with shifting
+business priorities like Big Push and spill minimization, with tunable controls for tactical deployment.
+  - Delivered a 12–15% improvement in 1D fulfillment rate and >10% tighter capacity utilization vs. baseline policies
+through joint flight-bank coordination, powering next-gen strategic aviation resource allocation at global scale.
+    
 - **Data Scientist - Generative AI**, iLink Digital *(Jan - Aug 2024)*  
   - Designed and deployed a scalable Retrieval-Augmented Generation (RAG) system to process over 15M+ documents in under 0.5 seconds using Llama 2, Nvidia TensorRT, and CosmosDB for real-time decision-making.  
   - Enhanced retrieval pipelines with hybrid search algorithms and reranking methods, significantly improving context relevance and minimizing hallucinations, validated through LLMEval and RAGAs.  
