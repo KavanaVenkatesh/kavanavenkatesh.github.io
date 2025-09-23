@@ -58,28 +58,26 @@ author_profile: False
           {{ post.title }}
         </h3>
 
+      <!-- Display Authors (no links, no blue color) -->
+      {% if post.authors %}
+        <p style="margin: 4px 0 4px 0; color: #333333; font-size: 0.9em;">
+          {% for author in post.authors %}
+            {% if author.name == "Kavana Venkatesh" %}
+              <span style="font-weight: bold;">{{ author.name }}</span>
+            {% else %}
+              {{ author.name }}
+            {% endif %}
+            {% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+
       <!-- Cute acceptance line -->
       {% if post.venue %}
         <p style="margin: 2px 0 5px 0; font-size: 0.9em; font-style: italic; color: #000000; font-weight: normal;">
           {{ post.venue }}
         </p>
       {% endif %}
-
-        <!-- Display Authors with Links -->
-        {% if post.authors %}
-          <p style="margin: 0; color: #4a4a4a; font-size: 0.9em;">
-            {% for author in post.authors %}
-              {% if author.name == "Kavana Venkatesh" %}
-                <span style="font-weight: bold; color: #1a73e8;">{{ author.name }}</span>
-              {% elsif author.website %}
-                <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
-              {% else %}
-                {{ author.name }}
-              {% endif %}
-              {% if forloop.last == false %}, {% endif %}
-            {% endfor %}
-          </p>
-        {% endif %}
 
         <!-- Buttons for Website, PDF, arXiv, Abstract, and BibTeX -->
         <p style="display: flex; gap: 5px; margin-top: 5px;">
