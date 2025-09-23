@@ -7,7 +7,7 @@ authors:
     website: "https://www.linkedin.com/in/connor-dunlop-3a2880268/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: "NeurIPS 2025"
+venue: "In Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)"
 venue_short: "NeurIPS"
 arxivurl: "https://arxiv.org/abs/2504.05306"
 websiteurl: "https://crea-diffusion.github.io/"
