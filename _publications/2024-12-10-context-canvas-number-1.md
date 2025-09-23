@@ -10,6 +10,7 @@ authors:
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
 venue: "arXiv preprint arXiv:2412.09614"
+venue_short: "arXiv"
 paperurl: "https://arxiv.org/abs/2412.09614"
 websiteurl: "https://context-canvas.github.io/"
 arxivurl: "https://arxiv.org/pdf/2412.09614"
