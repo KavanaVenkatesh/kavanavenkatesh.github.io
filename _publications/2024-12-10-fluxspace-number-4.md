@@ -7,7 +7,7 @@ authors:
     website: "https://kavanavenkatesh.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: "arXiv preprint arXiv:2412.09611"
+venue: "CVPR 2025"
 arxivurl: "https://arxiv.org/abs/2412.09611"
 websiteurl: "https://fluxspace.github.io/"
 paperurl: "https://arxiv.org/pdf/2412.09611"
