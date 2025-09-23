@@ -31,6 +31,13 @@ author_profile: False
         </div>
       {% endif %}
 
+      <!-- Venue Badge -->
+      {% if post.venue_short %}
+        <div style="position: absolute; right: 0; background: #007bff; color: white; font-size: 0.75em; font-weight: bold; padding: 4px 10px; border-radius: 5px;">
+          {{ post.venue_short }}
+        </div>
+      {% endif %}
+
       <!-- Display Details -->
       <div>
         <!-- Display Title -->
