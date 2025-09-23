@@ -8,6 +8,7 @@ authors:
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
 venue: "NeurIPS 2025"
+venue_short: "NeurIPS"
 arxivurl: "https://arxiv.org/abs/2504.05306"
 websiteurl: "https://crea-diffusion.github.io/"
 paperurl: "https://arxiv.org/pdf/2504.05306"
