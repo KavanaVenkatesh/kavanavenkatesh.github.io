@@ -8,7 +8,7 @@ authors:
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
 venue: "CVPR 2025"
-venue_short: "CVPR 2025"
+venue_short: "CVPR"
 arxivurl: "https://arxiv.org/abs/2412.09611"
 websiteurl: "https://fluxspace.github.io/"
 paperurl: "https://arxiv.org/pdf/2412.09611"
