@@ -38,6 +38,13 @@ author_profile: False
           {{ post.title }}
         </h3>
 
+      <!-- Cute acceptance line -->
+      {% if post.venue %}
+        <p style="margin: 2px 0 5px 0; font-size: 0.85em; color: #28a745; font-weight: bold;">
+          🎉 Accepted at {{ post.venue }}
+        </p>
+      {% endif %}
+
         <!-- Display Authors with Links -->
         {% if post.authors %}
           <p style="margin: 0; color: #4a4a4a; font-size: 0.9em;">
