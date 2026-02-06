@@ -18,7 +18,7 @@ Feel free to explore my work, and reach out if you'd like to collaborate or just
 
 ---
 
-<p style="color: #d63384; text-align: center; margin-bottom: 15px;">I am actively looking for research internships for Summer 2026. If you have an open position that aligns with my experience, please reach out!</p>
+<p style="color: #d63384; text-align: center; margin-bottom: 15px;">I will be joining Apple as a Research Intern in Summer 2026 at their Seattle office! I would love to connect with fellow interns! Feel free to email me for a coffee chat!</p>
 
 ## <span style="color: #6a0dad; font-size: 1.5em; display: flex; align-items: center;"><span style="margin-right: 10px;">🔬</span> Research</span>
 
