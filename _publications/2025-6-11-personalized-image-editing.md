@@ -5,7 +5,7 @@ authors:
     website: "https://www.linkedin.com/in/connor-dunlop-3a2880268/"
   - name: "Matthew Zheng*"
     website: "https://www.linkedin.com/in/matthew-zheng-b93973220/"
-  - name: "Kavana Venkatesh*"
+  - name: "<b style='color:#1a73e8;'>Kavana Venkatesh*</b>"
     website: "https://kavanavenkatesh.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
