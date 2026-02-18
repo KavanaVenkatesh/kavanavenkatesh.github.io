@@ -9,7 +9,7 @@ authors:
     website: "https://kavanavenkatesh.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: "In Proceedings of the Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)"
+venue: ""
 venue_short: "NeurIPS"
 arxivurl: "https://arxiv.org/abs/2511.05616"
 websiteurl: "https://personalized-editing.github.io/"
