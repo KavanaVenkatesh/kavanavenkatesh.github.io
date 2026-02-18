@@ -10,7 +10,7 @@ authors:
     website: "https://isminoula.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: "arXiv preprint arXiv:2412.09614"
+venue: ""
 venue_short: "arXiv"
 paperurl: "https://arxiv.org/abs/2412.09614"
 websiteurl: "https://ravel-diffusion.github.io/"
