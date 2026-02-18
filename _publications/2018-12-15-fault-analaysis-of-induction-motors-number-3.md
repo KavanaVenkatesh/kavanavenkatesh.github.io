@@ -5,7 +5,7 @@ authors:
     website: "https://kavanavenkatesh.github.io/"
   - name: "Neethi M"
     website: "https://sjce.ac.in/ee-faculty/m-neethi/"
-venue: "In Proceedings of the International Conference on Electrical, Electronics, Communication, Computer, and Optimization<br>Techniques: ICEECCOT 2018"
+venue: ""
 venue_short: "IEEE"
 paperurl: 'https://arxiv.org/pdf/2409.09944'
 arxivurl: "https://arxiv.org/abs/2409.09944"
