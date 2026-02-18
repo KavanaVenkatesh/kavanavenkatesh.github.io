@@ -1,6 +1,6 @@
 ---
 title: "RAVEL: Rare Concept Generation and Editing via Graph-driven Relational Guidance"
-teaser: "/images/ravel.png" 
+teaser: "/images/ravel-teaser.png" 
 authors:
   - name: "<b style='color:#1a73e8;'>Kavana Venkatesh</b>"
     website: "https://kavanavenkatesh.github.io/"
