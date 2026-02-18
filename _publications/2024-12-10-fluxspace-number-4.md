@@ -1,5 +1,6 @@
 ---
 title: "FluxSpace: Disentangled Image Editing in Rectified Flow Models"
+teaser: "/images/fluxspace_teaser.jpg"  # Add this line with your actual image path
 authors:
   - name: "Yusuf Dalva"
     website: "https://yusufdalva.github.io/"
