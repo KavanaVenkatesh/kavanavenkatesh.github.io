@@ -1,3 +1,4 @@
+---
 title: "RAVEL: Rare Concept Generation and Editing via Graph-driven Relational Guidance"
 authors:
   - name: "<b style='color:#1a73e8;'>Kavana Venkatesh</b>"
@@ -19,11 +20,12 @@ abstract: >
 description: "We propose a framework that uses knowledge graphs for improving text-to-image diffusion models."
 bibtex: |
   @misc{venkatesh2025ravelrareconceptgeneration,
-      title={RAVEL: Rare Concept Generation and Editing via Graph-driven Relational Guidance}, 
+      title={RAVEL: Rare Concept Generation and Editing via Graph-driven Relational Guidance},
       author={Kavana Venkatesh and Yusuf Dalva and Ismini Lourentzou and Pinar Yanardag},
       year={2025},
       eprint={2412.09614},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.09614}, 
+      url={https://arxiv.org/abs/2412.09614},
   }
+---
