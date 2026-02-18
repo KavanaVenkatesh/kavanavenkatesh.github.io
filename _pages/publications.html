@@ -52,25 +52,9 @@ author_profile: False
     <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 2px; position: relative;">
       <!-- Display Teaser Image -->
       {% if post.teaser %}
-        <div class="teaser-glow-container" style="
-          flex-shrink: 0; 
-          margin-right: 25px; 
-          margin-top: 5px;
-          padding: 2px; 
-          background: linear-gradient(135deg, #FFD700, #D63384); 
-          border-radius: 10px; 
-          box-shadow: 0 0 12px rgba(214, 51, 132, 0.4), 0 0 5px rgba(255, 215, 0, 0.3); 
-          line-height: 0;">
-          <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" style="
-            display: block; 
-            width: 180px; 
-            height: 110px; 
-            object-fit: cover; 
-            border-radius: 8px; 
-            background: #fff;">
+        <div class="teaser" style="margin-right: 10px;">
+          <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" class="teaser-img" style="width: 150px; height: auto; border-radius: 8px;">
         </div>
-      {% else %}
-        <div style="width: 184px; margin-right: 25px; flex-shrink: 0;"></div>
       {% endif %}
 
       <!-- Venue Badge -->
