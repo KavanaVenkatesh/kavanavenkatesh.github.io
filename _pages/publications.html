@@ -1,10 +1,35 @@
 ---
 layout: archive
 title: "Publications"
-teaser: "/images/fluxspace_teaser.jpg"  # Add this line with your actual image path
 permalink: /publications/
 author_profile: False
 ---
+
+<style>
+  .teaser-glow-container {
+    flex-shrink: 0;
+    margin-right: 25px;
+    padding: 2px; /* This creates the border thickness */
+    background: linear-gradient(135deg, #FFD700, #D63384); /* Gold to Pink */
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(214, 51, 132, 0.4), 0 0 5px rgba(255, 215, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .teaser-glow-container:hover {
+    box-shadow: 0 0 20px rgba(214, 51, 132, 0.6), 0 0 10px rgba(255, 215, 0, 0.5);
+    transform: translateY(-2px);
+  }
+
+  .teaser-img {
+    display: block;
+    width: 180px; /* Adjust width as needed */
+    height: 110px; /* Fixed height for a neat grid look */
+    object-fit: cover;
+    border-radius: 8px;
+    background: #fff;
+  }
+</style>
 
 {% if site.author.googlescholar %}
   <div class="wordwrap" style="margin-bottom: 15px;">
