@@ -1,5 +1,6 @@
 ---
 title: "PhysicsAgentABM: Physics-Guided Generative Agent-Based Modeling"
+teaser: "/images/physicsagentabm.png"  
 authors:
   - name: "<b style='color:#1a73e8;'>Kavana Venkatesh</b>"
     website: "https://kavanavenkatesh.github.io/"
