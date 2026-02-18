@@ -10,7 +10,7 @@ authors:
     website: "https://jundongli.github.io/"
   - name: "Jiaming Cui"
     website: "https://scholar.google.com/citations?user=hgmPwyUAAAAJ&hl=en"
-venue: "arXiv preprint 	arXiv:2602.06030"
+venue: ""
 venue_short: "arXiv"
 paperurl: "https://arxiv.org/abs/2602.06030"
 websiteurl: "https://arxiv.org/abs/2602.06030"
