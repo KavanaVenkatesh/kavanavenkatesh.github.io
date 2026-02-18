@@ -38,21 +38,45 @@ I aim to develop interpretable and efficient generative models to enable safe co
 
 <div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 400px; overflow-y: auto; font-size: 0.9em;">
   <ul style="list-style: none; padding: 0; margin: 0;">
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Sep. 2025</strong> 🎉 Two papers got accepted to <a href="https://neurips.cc/" target="_blank" style="color: #007bff; text-decoration: none;">NeurIPS 2025</a>. 
-  See you in San Diego! 📍</li>
+    <!-- Latest 10 -->
+    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Sep. 2025</strong> 🎉 Two papers got accepted to <a href="https://neurips.cc/" target="_blank" style="color: #007bff; text-decoration: none;">NeurIPS 2025</a>. See you in San Diego! 📍</li>
+
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Aug. 2025</strong> 💼 Completed Applied Scientist Internship at <a href="https://www.amazon.science/" target="_blank" style="color: #007bff; text-decoration: none;">Amazon!</a></li>
+
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Apr. 2025</strong> 📄 New preprint <a href="https://arxiv.org/abs/2504.05306" target="_blank" style="color: #007bff; text-decoration: none;">CREA</a> published on arXiv.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Mar. 2025</strong> 🎤 I presented my research at <a href="https://capwic.org/" target="_blank" style="color: #007bff; text-decoration: none;">CAPWIC 2025 </a> in Washington, DC.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2025</strong> 🎉 <a href="https://arxiv.org/abs/2412.09611" target="_blank" style="color: #007bff; text-decoration: none;">FluxSpace </a> got accepted to <a href="https://cvpr.thecvf.com/" target="_blank" style="color: #007bff; text-decoration: none;">CVPR 2025</a>.</li>
+
+    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Mar. 2025</strong> 🎤 I presented my research at <a href="https://capwic.org/" target="_blank" style="color: #007bff; text-decoration: none;">CAPWIC 2025</a> in Washington, DC.</li>
+
+    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2025</strong> 🎉 <a href="https://arxiv.org/abs/2412.09611" target="_blank" style="color: #007bff; text-decoration: none;">FluxSpace</a> got accepted to <a href="https://cvpr.thecvf.com/" target="_blank" style="color: #007bff; text-decoration: none;">CVPR 2025</a>.</li>
+
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Dec. 2024</strong> 📄 Two papers <a href="https://arxiv.org/abs/2412.09614" target="_blank" style="color: #007bff; text-decoration: none;">Context Canvas</a> and <a href="https://arxiv.org/abs/2412.09611" target="_blank" style="color: #007bff; text-decoration: none;">FluxSpace</a> uploaded to arXiv.</li>
+
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Aug. 2024</strong> 🧑‍🎓 I started my PhD in Computer Science at <a href="https://www.vt.edu/" target="_blank" style="color: #007bff; text-decoration: none;">Virginia Tech</a>.</li>
+
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Apr. 2024</strong> 🗣️ Hosted Two-Day GenAI Workshop at <a href="https://www.northeastern.edu/" target="_blank" style="color: #007bff; text-decoration: none;">NEU</a> as WiDS Ambassador.</li>
+
     <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Mar. 2024</strong> 🗣️ Invited talk at <a href="https://www.umass.edu/" target="_blank" style="color: #007bff; text-decoration: none;">UMass Amherst</a> on responsible AI.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2024</strong> 🌟 Appointed <a href="https://www.widsworldwide.org/" target="_blank" style="color: #007bff; text-decoration: none;">WiDS Worldwide</a> Ambassador.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2022</strong> 💼 Joined <a href="https://www.ilink-digital.com/" target="_blank" style="color: #007bff; text-decoration: none;">iLink Digital</a> as a GenAI Data Scientist.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Oct. 2023</strong> 💻 Conducted webinar on LLMs at <a href="https://community.analyticsvidhya.com/c/datahour/harnessing-the-power-of-llms-a-deep-dive-into-practical-solutions/?utm_source=social" target="_blank" style="color: #6a0dad; text-decoration: none;">DataHour</a> by Analytics Vidhya.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Mar. 2023</strong> 🗣️ Invited talk at <a href="https://www.northeastern.edu/" target="_blank" style="color: #007bff; text-decoration: none;">Northeastern</a> on MLOps.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2022</strong> 💼 Joined <a href="https://www.fidelity.com/" target="_blank" style="color: #007bff; text-decoration: none;">Fidelity Investments</a> as a Data Scientist in NLP and Vision.</li>
-    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Dec. 2021</strong> 🎓 Graduated with M.S. in Data Science from <a href="https://www.northeastern.edu/" target="_blank" style="color: #007bff; text-decoration: none;">NEU</a>, Boston.</li>
+
+    <li style="margin-bottom: 0px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2024</strong> 🌟 Appointed <a href="https://www.widsworldwide.org/" target="_blank" style="color: #007bff; text-decoration: none;">WiDS Worldwide</a> Ambassador.</li>
   </ul>
 </div>
+
+---
+
+## <span style="color: #6a0dad; font-size: 1.35em; display: flex; align-items: center;"><span style="margin-right: 10px;">🗂️</span> Old News</span>
+
+<div style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; background: #f9f9f9; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-height: 300px; overflow-y: auto; font-size: 0.9em;">
+  <ul style="list-style: none; padding: 0; margin: 0;">
+    <!-- Everything older than latest 10 -->
+    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2022</strong> 💼 Joined <a href="https://www.ilink-digital.com/" target="_blank" style="color: #007bff; text-decoration: none;">iLink Digital</a> as a GenAI Data Scientist.</li>
+
+    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Oct. 2023</strong> 💻 Conducted webinar on LLMs at <a href="https://community.analyticsvidhya.com/c/datahour/harnessing-the-power-of-llms-a-deep-dive-into-practical-solutions/?utm_source=social" target="_blank" style="color: #6a0dad; text-decoration: none;">DataHour</a> by Analytics Vidhya.</li>
+
+    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Mar. 2023</strong> 🗣️ Invited talk at <a href="https://www.northeastern.edu/" target="_blank" style="color: #007bff; text-decoration: none;">Northeastern</a> on MLOps.</li>
+
+    <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2022</strong> 💼 Joined <a href="https://www.fidelity.com/" target="_blank" style="color: #007bff; text-decoration: none;">Fidelity Investments</a> as a Data Scientist in NLP and Vision.</li>
+
+    <li style="margin-bottom: 0px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Dec. 2021</strong> 🎓 Graduated with M.S. in Data Science from <a href="https://www.northeastern.edu/" target="_blank" style="color: #007bff; text-decoration: none;">NEU</a>, Boston.</li>
+  </ul>
+</div>
+
