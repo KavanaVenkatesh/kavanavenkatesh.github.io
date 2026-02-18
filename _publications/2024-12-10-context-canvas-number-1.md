@@ -1,4 +1,3 @@
----
 title: "RAVEL: Rare Concept Generation and Editing via Graph-driven Relational Guidance"
 authors:
   - name: "<b style='color:#1a73e8;'>Kavana Venkatesh</b>"
@@ -27,5 +26,4 @@ bibtex: |
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2412.09614}, 
-}
----
+  }
