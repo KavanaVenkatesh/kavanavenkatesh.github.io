@@ -53,7 +53,7 @@ I aim to develop interpretable and efficient generative models to enable safe co
   <details style="margin-top: 20px; cursor: pointer;">
     <summary style="font-weight: bold; color: #6a0dad; outline: none;">📜 View Older News</summary>
     <ul style="list-style: none; padding: 0; margin: 15px 0 0 0; border-top: 1px solid #eee; padding-top: 15px;">
-      <li style="margin-bottom: 15px; padding: 10px 15px; border-radius: 5px; background: #ffffff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);"><strong style="color: #000000;">Feb. 2024</strong> 🌟 Appointed <a href="https://www.widsworldwide.org/" target="_blank" style="color: #007bff; text-decoration: none;">WiDS Worldwide</a> Ambassador.</li>
+      <li style="margin-bottom: 10px; color: #555;"><strong style="color: #000000;">Feb. 2024</strong> 🌟 Appointed <a href="https://www.widsworldwide.org/" target="_blank">WiDS Worldwide</a> Ambassador.</li>
       <li style="margin-bottom: 10px; color: #555;"><strong style="color: #000000;">Feb. 2022</strong> 💼 Joined <a href="https://www.ilink-digital.com/" target="_blank">iLink Digital</a> as a GenAI Data Scientist.</li>
       <li style="margin-bottom: 10px; color: #555;"><strong style="color: #000000;">Oct. 2023</strong> 💻 Conducted webinar on LLMs at <a href="https://community.analyticsvidhya.com/c/datahour/harnessing-the-power-of-llms-a-deep-dive-into-practical-solutions/?utm_source=social" target="_blank" style="color: #6a0dad;">DataHour</a>.</li>
       <li style="margin-bottom: 10px; color: #555;"><strong style="color: #000000;">Mar. 2023</strong> 🗣️ Invited talk at <a href="https://www.northeastern.edu/" target="_blank">Northeastern</a> on MLOps.</li>
