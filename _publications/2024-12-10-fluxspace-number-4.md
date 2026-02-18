@@ -8,7 +8,7 @@ authors:
     website: "https://kavanavenkatesh.github.io/"
   - name: "Pinar Yanardag"
     website: "https://pinguar.org/"
-venue: "In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2025)"
+venue: ""
 venue_short: "CVPR"
 arxivurl: "https://arxiv.org/abs/2412.09611"
 websiteurl: "https://fluxspace.github.io/"
