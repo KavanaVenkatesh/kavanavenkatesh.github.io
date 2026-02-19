@@ -1,5 +1,6 @@
 ---
 title: "Fault Analysis and Predictive Maintenance of Induction Motor using Machine Learning"
+teaser: "/images/f-predict.png"
 authors:
   - name: "<b style='color:#1a73e8;'>Kavana Venkatesh</b>"
     website: "https://kavanavenkatesh.github.io/"
