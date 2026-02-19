@@ -44,8 +44,9 @@ author_profile: False
 <!-- Group papers by year -->
 {% assign grouped = site.publications | group_by: 'year' %}
 {% for group in grouped reversed %}
-  <div style="margin-top: 20px;"></div>
-  <hr style="margin: 10px 0; border: 1px solid #ddd;" />
+  <div style="position: relative; margin-bottom: 10px;">
+    <span style="position: absolute; right: 0; color: #ddd; font-size: 2em;">{{ group.name }}</span>
+  </div>
   {% for post in group.items %}
     <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 2px; position: relative;">
       <!-- Display Teaser Image -->
