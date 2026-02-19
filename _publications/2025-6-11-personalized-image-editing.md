@@ -1,5 +1,6 @@
 ---
 title: "Personalized Image Editing in Text-to-Image Diffusion Models via Collaborative Direct Preference Optimization"
+teaser: "/images/p-editing.png"
 authors:
   - name: "Connor Dunlop"
     website: "https://www.linkedin.com/in/connor-dunlop-3a2880268/"
