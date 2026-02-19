@@ -56,24 +56,24 @@ author_profile: False
           flex-shrink: 0; 
           margin-right: 25px; 
           margin-top: 5px; 
+          width: 180px;  /* Standard width for all teasers */
+          height: 120px; /* Standard height for all teasers */
           display: flex;
-          align-items: center;
+          align-items: flex-start; /* Aligns images to the top line of the title */
           justify-content: center;
-          width: 180px; /* Fixed width for alignment */
-          height: 110px; /* Fixed height to align with button row */
+          overflow: hidden;
         ">
           <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" style="
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Shows full image without cropping */
+            object-position: top; /* Ensures the top of images align perfectly */
             display: block;
             border-radius: 4px;
-            /* Border and Glow removed as requested */
           ">
         </div>
       {% else %}
-        <div style="width: 205px; margin-right: 25px; flex-shrink: 0;"></div>
+        <div style="width: 180px; height: 120px; margin-right: 25px; flex-shrink: 0;"></div>
       {% endif %}
       
       <!-- Venue Badge -->
