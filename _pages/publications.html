@@ -42,12 +42,12 @@ author_profile: False
 <!-- Main heading for Publications -->
 
 <!-- Group papers by year -->
+<div style="position: relative; margin-bottom: 10px;">
+      <span style="position: absolute; right: 0; color: #ddd; font-size: 2em;">{{ group.name }}</span>
+</div>
 {% assign grouped = site.publications | group_by: 'year' %}
 {% for group in grouped reversed %}
   {% for post in group.items %}
-  <div style="position: relative; margin-bottom: 10px;">
-      <span style="position: absolute; right: 0; color: #ddd; font-size: 2em;">{{ group.name }}</span>
-    </div>
     <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 2px; position: relative;">
       <!-- Display Teaser Image -->
       {% if post.teaser %}
