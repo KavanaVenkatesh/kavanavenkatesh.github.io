@@ -52,32 +52,30 @@ author_profile: False
     <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 2px; position: relative;">
       <!-- Display Teaser Image -->
       {% if post.teaser %}
-        <div class="teaser-glow-wrapper" style="
+        <div class="teaser-container" style="
           flex-shrink: 0; 
-          margin-right: 30px; 
+          margin-right: 25px; 
           margin-top: 5px; 
-          line-height: 0;
-          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 180px; /* Fixed width for alignment */
+          height: 110px; /* Fixed height to align with button row */
         ">
           <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" style="
-            display: block; 
-            width: 170px; 
-            height: 105px; 
-            object-fit: cover; 
-            border-radius: 8px; 
-            background: #fff;
-            /* This creates the sophisticated glowing border WITHOUT covering the image */
-            box-shadow: 
-              0 0 0 2px white, 
-              0 0 0 4px #FFD700, 
-              0 0 0 5px #D63384,
-              0 0 15px rgba(214, 51, 132, 0.5);
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+            /* Border and Glow removed as requested */
           ">
         </div>
       {% else %}
-        <div style="width: 185px; margin-right: 30px; flex-shrink: 0;"></div>
+        <div style="width: 205px; margin-right: 25px; flex-shrink: 0;"></div>
       {% endif %}
-
+      
       <!-- Venue Badge -->
       {% if post.venue_short %}
         <div style="
