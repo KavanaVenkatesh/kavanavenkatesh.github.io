@@ -1,6 +1,6 @@
 ---
 title: "FluxSpace: Disentangled Image Editing in Rectified Flow Models"
-teaser: "/images/fluxspace.png"  
+teaser: "/images/flux-space.png"  
 authors:
   - name: "Yusuf Dalva"
     website: "https://yusufdalva.github.io/"
