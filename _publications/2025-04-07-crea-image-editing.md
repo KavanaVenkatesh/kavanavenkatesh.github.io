@@ -1,6 +1,6 @@
 ---
 title: "CREA: A Collaborative Multi-Agent Framework for Creative Content Generation with Diffusion Models"
-teaser: "./images/crea.png"
+teaser: "/images/crea-teaser.png" 
 authors:
   - name: "<b style='color:#1a73e8;'>Kavana Venkatesh*</b>"
     website: "https://kavanavenkatesh.github.io/"
