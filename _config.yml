@@ -22,9 +22,9 @@ repository               : "KavanaVenkatesh/kavanavenkatesh.github.io"
 author:
   # Biographic information
   avatar           : "Kavana_Picture.jpg"
-  name             :  "CS PhD Student"
-  pronouns         : # "She/Her"  
-  bio              : "GenAI | LLMs | Diffusion Models"
+  name             :  "Kavana Venkatesh"
+  pronouns         : # "She/Her"
+  bio              : "CS PhD Student · Agentic AI · Self-Evolving Agents"
   location         : "Blacksburg, VA"
   employer         : "Virginia Tech"
   uri              : "https://sanghani.cs.vt.edu/person/kavana-venkatesh/"
