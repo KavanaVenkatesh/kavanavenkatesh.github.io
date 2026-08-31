@@ -1,6 +1,6 @@
 ---
 title: "Do Agent Societies Develop Intellectual Elites? The Hidden Power Laws of Collective Cognition in LLM Multi-Agent Systems"
-teaser: "/images/caspian-image.png"
+teaser: "/images/mas-powerlaws-image.png"
 authors:
   - name: "Kavana Venkatesh"
     website: "https://kavanavenkatesh.github.io/"
