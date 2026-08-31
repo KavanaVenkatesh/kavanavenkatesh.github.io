@@ -6,28 +6,145 @@ author_profile: False
 ---
 
 <style>
-  .teaser-glow-container {
+  .publication-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2px;
+    position: relative;
+    padding-right: 100px; /* reserve room so text never slides under the badge */
+  }
+
+  .teaser-container {
     flex-shrink: 0;
     margin-right: 25px;
-    padding: 2px; /* This creates the border thickness */
-    background: linear-gradient(135deg, #FFD700, #D63384); /* Gold to Pink */
-    border-radius: 10px;
-    box-shadow: 0 0 12px rgba(214, 51, 132, 0.4), 0 0 5px rgba(255, 215, 0, 0.3);
-    transition: all 0.3s ease-in-out;
+    margin-top: 5px;
+    width: 180px;   /* standard width for all teasers */
+    height: 120px;  /* standard height for all teasers */
+    display: flex;
+    align-items: flex-start;    /* aligns images to the top line of the title */
+    justify-content: center;
+    overflow: hidden;
   }
 
-  .teaser-glow-container:hover {
-    box-shadow: 0 0 20px rgba(214, 51, 132, 0.6), 0 0 10px rgba(255, 215, 0, 0.5);
-    transform: translateY(-2px);
-  }
-
-  .teaser-img {
+  .teaser-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;        /* shows full image without cropping */
+    object-position: top;       /* ensures the top of images align perfectly */
     display: block;
-    width: 180px; /* Adjust width as needed */
-    height: 110px; /* Fixed height for a neat grid look */
-    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .venue-badge {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: #bb6bd9;
+    color: white;
+    font-size: 0.75em;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow:
+      inset 0 1px 2px rgba(255, 255, 255, 0.2),
+      inset 0 -1px 2px rgba(0, 0, 0, 0.2),
+      0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+
+  .pub-details {
+    flex: 1;
+    min-width: 0; /* allow text to wrap instead of overflowing the flex row */
+  }
+
+  .pub-title {
+    color: #d63384;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-top: 0;
+  }
+
+  .pub-authors {
+    margin: 0;
+    color: #4a4a4a;
+    font-size: 0.9em;
+  }
+
+  .pub-venue {
+    margin: 2px 0 5px 0;
+    font-size: 0.9em;
+    font-style: italic;
+    color: #000000;
+    font-weight: normal;
+  }
+
+  .pub-buttons {
+    display: flex;
+    flex-wrap: wrap; /* let buttons flow onto multiple lines instead of overflowing */
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .pub-buttons a,
+  .pub-buttons button {
+    padding: 3px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.85em;
+    background: none;
+    cursor: pointer;
+  }
+
+  .pub-abstract {
+    display: none;
+    border: 1px dotted #ccc;
+    padding: 5px;
+    font-size: 0.9em;
+  }
+
+  .pub-bibtex {
+    display: none;
+    background: #f3e5f5;
+    padding: 10px;
     border-radius: 8px;
-    background: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* ---- Mobile: stack image above text, badge inline, buttons wrap ---- */
+  @media (max-width: 600px) {
+    .publication-item {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 0;
+    }
+
+    .teaser-container {
+      margin-right: 0;
+      margin-bottom: 12px;
+      width: 100%;
+      max-width: 220px; /* centered, capped so small teasers don't blow up */
+      height: auto;
+    }
+
+    .teaser-container img {
+      height: auto;
+    }
+
+    .pub-details {
+      width: 100%;
+    }
+
+    .venue-badge {
+      position: static;
+      display: inline-block;
+      margin-bottom: 8px;
+      transform: none;
+    }
   }
 </style>
 
@@ -39,118 +156,72 @@ author_profile: False
 
 {% include base_path %}
 
-<!-- Main heading for Publications -->
-
 <!-- Group papers by year -->
-<div style="position: relative; margin-bottom: 10px;">
-      <span style="position: absolute; right: 0; color: #ddd; font-size: 2em;">{{ group.name }}</span>
-</div>
 {% assign grouped = site.publications | group_by: 'year' %}
 {% for group in grouped reversed %}
   {% for post in group.items %}
-    <div class="publication-item" style="display: flex; align-items: flex-start; margin-bottom: 2px; position: relative;">
+    <div class="publication-item">
       <!-- Display Teaser Image -->
       {% if post.teaser %}
-        <div class="teaser-container" style="
-          flex-shrink: 0; 
-          margin-right: 25px; 
-          margin-top: 5px; 
-          width: 180px;  /* Standard width for all teasers */
-          height: 120px; /* Standard height for all teasers */
-          display: flex;
-          align-items: flex-start; /* Aligns images to the top line of the title */
-          justify-content: center;
-          overflow: hidden;
-        ">
-          <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}" style="
-            width: 100%;
-            height: 100%;
-            object-fit: contain; /* Shows full image without cropping */
-            object-position: top; /* Ensures the top of images align perfectly */
-            display: block;
-            border-radius: 4px;
-          ">
-        </div>
-      {% else %}
+        <div class="teaser-container">
+          <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}">
         </div>
       {% endif %}
-      
+
       <!-- Venue Badge -->
       {% if post.venue_short %}
-        <div style="
-          position: absolute;
-          top: 50%;
-          right: 10px;
-          transform: translateY(-50%);
-          background: #bb6bd9; 
-          color: white;
-          font-size: 0.75em;
-          font-weight: bold;
-          padding: 4px 10px;
-          border-radius: 6px;
-          white-space: nowrap;
-          box-shadow:
-            inset 0 1px 2px rgba(255, 255, 255, 0.2),
-            inset 0 -1px 2px rgba(0, 0, 0, 0.2),
-            0 2px 6px rgba(0, 0, 0, 0.15);
-        ">
-          {{ post.venue_short }}
-        </div>
+        <div class="venue-badge">{{ post.venue_short }}</div>
       {% endif %}
 
       <!-- Display Details -->
-      <div>
+      <div class="pub-details">
         <!-- Display Title -->
-        <h3 style="color: #d63384; font-size: 1.1em; font-weight: normal; margin-top: 0;">
-          {{ post.title }}
-        </h3>
-        
-      <!-- Display Authors with Links -->
-      {% if post.authors %}
-        <p style="margin: 0; color: #4a4a4a; font-size: 0.9em;">
-          {% for author in post.authors %}
-            {% if author.name == "Kavana Venkatesh" %}
-              <span style="font-weight: bold; color: #1a73e8;">{{ author.name }}</span>
-            {% elsif author.website %}
-              <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
-            {% else %}
-              {{ author.name }}
-            {% endif %}
-            {% if forloop.last == false %}, {% endif %}
-          {% endfor %}
-        </p>
-      {% endif %}
+        <h3 class="pub-title">{{ post.title }}</h3>
 
-      <!-- Cute acceptance line -->
-      {% if post.venue %}
-        <p style="margin: 2px 0 5px 0; font-size: 0.9em; font-style: italic; color: #000000; font-weight: normal;">
-          {{ post.venue }}
-        </p>
-      {% endif %}
+        <!-- Display Authors with Links -->
+        {% if post.authors %}
+          <p class="pub-authors">
+            {% for author in post.authors %}
+              {% if author.name == "Kavana Venkatesh" %}
+                <span style="font-weight: bold; color: #1a73e8;">{{ author.name }}</span>
+              {% elsif author.website %}
+                <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
+              {% else %}
+                {{ author.name }}
+              {% endif %}
+              {% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+          </p>
+        {% endif %}
+
+        <!-- Cute acceptance line -->
+        {% if post.venue %}
+          <p class="pub-venue">{{ post.venue }}</p>
+        {% endif %}
 
         <!-- Buttons for Website, PDF, arXiv, Abstract, and BibTeX -->
-        <p style="display: flex; gap: 5px; margin-top: 5px;">
+        <p class="pub-buttons">
           {% if post.websiteurl %}
-            <a href="{{ post.websiteurl }}" target="_blank" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">Website</a>
+            <a href="{{ post.websiteurl }}" target="_blank">Website</a>
           {% endif %}
           {% if post.paperurl %}
-            <a href="{{ post.paperurl }}" target="_blank" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">PDF</a>
+            <a href="{{ post.paperurl }}" target="_blank">PDF</a>
           {% endif %}
           {% if post.arxivurl %}
-            <a href="{{ post.arxivurl }}" target="_blank" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">arXiv</a>
+            <a href="{{ post.arxivurl }}" target="_blank">arXiv</a>
           {% endif %}
-          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'abstract')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">Abstract</button>
-          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'bibtex')" style="padding: 3px 8px; border: 1px solid black; border-radius: 5px; text-decoration: none; font-size: 0.85em;">BibTeX</button>
+          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'abstract')">Abstract</button>
+          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'bibtex')">BibTeX</button>
         </p>
 
         <div id="content-{{ group.name }}-{{ forloop.index }}" style="padding: 5px; margin-top: 5px;">
           <!-- Abstract Section -->
-          <div id="content-{{ group.name }}-{{ forloop.index }}-abstract" style="display: none; border: 1px dotted #ccc; padding: 5px; font-size: 0.9em;">
+          <div id="content-{{ group.name }}-{{ forloop.index }}-abstract" class="pub-abstract">
             {{ post.abstract }}
           </div>
 
           <!-- BibTeX Section -->
-          <div id="content-{{ group.name }}-{{ forloop.index }}-bibtex" style="display: none; background: #f3e5f5; padding: 10px; border-radius: 8px; font-family: 'Courier New', Courier, monospace; position: relative; font-size: 0.9em; white-space: pre-wrap; word-wrap: break-word;">
+          <div id="content-{{ group.name }}-{{ forloop.index }}-bibtex" class="pub-bibtex">
             <button onclick="copyBibTeX('bibtex-content-{{ group.name }}-{{ forloop.index }}')" style="position: absolute; top: 5px; right: 5px; background: none; border: none; cursor: pointer;">
               <span id="copy-icon-{{ group.name }}-{{ forloop.index }}">📋</span>
             </button>
