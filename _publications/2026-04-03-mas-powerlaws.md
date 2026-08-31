@@ -6,7 +6,7 @@ authors:
     website: "https://kavanavenkatesh.github.io/"
   - name: "Jiaming Cui"
     website: "https://scholar.google.com/citations?user=hgmPwyUAAAAJ&hl=en"
-venue: "arXiv preprint arXiv:2604.02674"
+venue: ""
 venue_short: "arXiv"
 paperurl: "https://arxiv.org/abs/2604.02674"
 websiteurl: "https://arxiv.org/abs/2604.02674"
