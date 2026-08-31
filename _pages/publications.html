@@ -115,6 +115,15 @@ author_profile: False
     word-wrap: break-word;
   }
 
+  .pub-year {
+    text-align: right;
+    color: #ddd;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1;
+    margin: 18px 0 2px;
+  }
+
   /* ---- Mobile: stack image above text, badge inline, buttons wrap ---- */
   @media (max-width: 600px) {
     .publication-item {
@@ -145,6 +154,11 @@ author_profile: False
       margin-bottom: 8px;
       transform: none;
     }
+
+    .pub-year {
+      font-size: 1.6em;
+      text-align: center;
+    }
   }
 </style>
 
@@ -159,6 +173,7 @@ author_profile: False
 <!-- Group papers by year -->
 {% assign grouped = site.publications | group_by: 'year' %}
 {% for group in grouped reversed %}
+  <div class="pub-year">{{ group.name }}</div>
   {% for post in group.items %}
     <div class="publication-item">
       <!-- Display Teaser Image -->
