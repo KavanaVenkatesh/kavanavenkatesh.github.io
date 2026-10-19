@@ -283,3 +283,31 @@
 .kv-home-v2 .v2-pin p{font-size:13px}
 @media(max-width:720px){.kv-home-v2 .v8-mechanism-steps{gap:5px}.kv-home-v2 .v8-mechanism-steps span{font-size:10px}.kv-home-v2 .kv-pubs-venue-kind{font-size:9px}}
 @media(prefers-reduced-motion:reduce){.kv-home-v2 .v8-lighthouse,.kv-home-v2 .kv-core-state--safety path:first-child,.kv-home-v2 .kv-core-state--evolving circle,.kv-home-v2 .kv-core-state--harness rect:first-child{animation:none!important}.kv-home-v2 .kv-wheel-sector::before{transition:none!important}}
+
+/* Research wheel: prevent north-sector title overlap */
+.kv-home-v2 .kv-wheel-sector--north {
+  width: 38%;
+  left: 31%;
+  top: 3.2%;
+}
+
+.kv-home-v2 .kv-wheel-sector--north .kv-wheel-sector-title {
+  font-size: clamp(18px, 2.1vw, 27px);
+  line-height: 1.03;
+}
+
+.kv-home-v2 .kv-wheel-sector--north .kv-wheel-sector-title i {
+  white-space: nowrap;
+}
+
+@media (max-width: 620px) {
+  .kv-home-v2 .kv-wheel-sector--north {
+    width: 42%;
+    left: 29%;
+    top: 2.2%;
+  }
+
+  .kv-home-v2 .kv-wheel-sector--north .kv-wheel-sector-title {
+    font-size: clamp(13px, 3.4vw, 19px);
+  }
+}
