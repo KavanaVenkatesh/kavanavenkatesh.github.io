@@ -1,0 +1,322 @@
+author_profiles:
+  M. Neethi: https://arxiver.lazybrains.com/author/1794772
+  Jafar Isbarov: https://ceferisbarov.github.io/
+  Saad Amin: https://www.linkedin.com/in/saad-amin-72403a31b/
+  Murat Kantarcioglu: https://website.cs.vt.edu/people/faculty/murat-kantarcioglu.html
+  Jiaming Cui: https://people.cs.vt.edu/jiamingcui/
+  Yusuf Dalva: https://yusufdalva.github.io/
+  Ismini Lourentzou: https://isminoula.github.io/
+  Pinar Yanardag: https://pinguar.org/
+  Yinhan He: https://yinhanhe123.github.io/
+  Jundong Li: https://jundongli.github.io/
+  Connor Dunlop: https://sanghani.cs.vt.edu/people/students/connor-dunlop.html
+  Matthew Zheng: https://www.csauthors.net/matthew-zheng/
+papers:
+- id: caspian
+  year: '2026'
+  title: 'CASPIAN: Online Detection and Attribution of Cascade Attacks in LLM Multi-Agent Systems via Cross-Channel
+    Causal Monitoring'
+  authors: Kavana Venkatesh, Jafar Isbarov, Saad Amin, Murat Kantarcioglu, Jiaming Cui
+  venue: NeurIPS 2026
+  venue_note: Main conference
+  venue_kind: main
+  area: agents
+  area_name: Agentic AI & safety
+  summary: Online cross-channel monitoring of how adversarial influence propagates across multi-agent communication,
+    memory, and tool use, with detection and causal attribution of cascade attacks.
+  arxiv: https://arxiv.org/abs/2605.19240
+  project: https://caspian-detector.github.io/blog.io/
+  bibkey: venkatesh2026caspian
+  doi: ''
+  figure: ''
+  citation: 'Kavana Venkatesh, Jafar Isbarov, Saad Amin, Murat Kantarcioglu, Jiaming Cui (2026). CASPIAN: Online
+    Detection and Attribution of Cascade Attacks in LLM Multi-Agent Systems via Cross-Channel Causal Monitoring.
+    NeurIPS 2026. https://arxiv.org/abs/2605.19240'
+  abstract: >-
+    Cascade attacks in LLM multi-agent systems (MAS) arise when adversarial influence propagates across
+    agents and leads to escalated system-level failures through complex agent interactions. Detecting
+    such cascades is challenging, as their signals are distributed, tightly coupled across interaction
+    channels, and often appear plausibly benign locally but may unfold quickly either within a single
+    turn or gradually across multiple turns. Existing defenses, being largely local and text-centric,
+    fail to capture such cross-channel, temporally coordinated dynamics of cascade propagation.
+    Therefore, we propose CASPIAN, the first framework that provides a unified, cross-channel causal
+    analysis of cascade behavior in LLM-MAS through online monitoring of dynamic influence propagation
+    across agents. CASPIAN models multi-agent interactions using a unified, dynamic causal influence
+    matrix across channels, estimated efficiently via a late-interaction conditional transfer entropy
+    (LI-CTE) formulation, thereby enabling the detection of cascade onset from emergent system-level
+    structure rather than isolated anomalies. It further performs online causal attribution, identifying
+    the origin, bridge, and amplifier agents driving the cascade and reconstructing its principal
+    propagation pathways, capabilities not supported by existing methods. Across diverse multi-agent
+    frameworks and benchmarks, CASPIAN consistently outperforms semantic guardrails, LLM-based judges,
+    and graph-based anomaly detectors in both detection accuracy and early cascade identification while
+    operating with sub-1% relative overhead latency. These results demonstrate that unified
+    cross-channel causal modeling is essential for reliably detecting and understanding cascade failures
+    in LLM multi-agent systems.
+  abstract_highlights:
+    - "cascade attacks"
+    - "cross-channel"
+    - "attribution"
+    - "causal"
+- id: ravel
+  year: '2026'
+  title: 'RAVEL: Rare Concept Generation and Editing via Graph-driven Relational Guidance'
+  authors: Kavana Venkatesh, Yusuf Dalva, Ismini Lourentzou, Pinar Yanardag
+  venue: NeurIPS 2026
+  venue_note: Main conference
+  venue_kind: main
+  area: vision
+  area_name: Generative vision
+  summary: A training-free, graph-guided retrieval and self-correction approach to generating and editing rare,
+    complex, or culturally nuanced visual concepts with diffusion models.
+  arxiv: https://arxiv.org/abs/2412.09614
+  project: https://ravel-diffusion.github.io/
+  bibkey: venkatesh2026ravel
+  doi: ''
+  figure: ''
+  citation: 'Kavana Venkatesh, Yusuf Dalva, Ismini Lourentzou, Pinar Yanardag (2026). RAVEL: Rare Concept Generation
+    and Editing via Graph-driven Relational Guidance. NeurIPS 2026. https://arxiv.org/abs/2412.09614'
+  abstract: >-
+    Despite impressive visual fidelity, current text-to-image (T2I) diffusion models struggle to depict
+    rare, complex, or culturally nuanced concepts due to training data limitations. We introduce RAVEL,
+    a training-free framework that significantly improves rare concept generation, context-driven image
+    editing, and self-correction by integrating graph-based retrieval-augmented generation (RAG) into
+    diffusion pipelines. Unlike prior RAG and LLM-enhanced methods reliant on visual exemplars, static
+    captions or pre-trained knowledge of models, RAVEL leverages structured knowledge graphs to retrieve
+    compositional, symbolic, and relational context, enabling nuanced grounding even in the absence of
+    visual priors. To further refine generation quality, we propose SRD, a novel self-correction module
+    that iteratively updates prompts via multi-aspect alignment feedback, enhancing attribute accuracy,
+    narrative coherence, and semantic fidelity. Our framework is model-agnostic and compatible with
+    leading diffusion models including Stable Diffusion XL, Flux, and DALL-E 3. We conduct extensive
+    evaluations across three newly proposed benchmarks - MythoBench, Rare-Concept-1K, and NovelBench.
+    RAVEL also consistently outperforms SOTA methods across perceptual, alignment, and LLM-as-a-Judge
+    metrics. These results position RAVEL as a robust paradigm for controllable and interpretable T2I
+    generation in long-tail domains.
+  abstract_highlights:
+    - "rare concept"
+    - "training-free"
+    - "graph"
+    - "self-correction"
+- id: coordination
+  year: '2026'
+  title: Do Agent Societies Develop Intellectual Elites? The Hidden Power Laws of Collective Cognition in LLM
+    Multi-Agent Systems
+  authors: Kavana Venkatesh, Jiaming Cui
+  venue: NeurIPS 2026 · Agentic Web Workshop
+  venue_note: Workshop
+  venue_kind: workshop
+  area: agents
+  area_name: Agentic AI & safety
+  summary: An empirical study of more than 1.5 million agent interactions, examining heavy-tailed coordination,
+    influence concentration, and scaling bottlenecks in interacting LLM agent societies.
+  arxiv: https://arxiv.org/abs/2604.02674
+  project: ''
+  bibkey: venkatesh2026agent
+  doi: ''
+  figure: ''
+  citation: Kavana Venkatesh, Jiaming Cui (2026). Do Agent Societies Develop Intellectual Elites? The Hidden
+    Power Laws of Collective Cognition in LLM Multi-Agent Systems. NeurIPS 2026 · Agentic Web Workshop. https://arxiv.org/abs/2604.02674
+  abstract: >-
+    Large Language Model (LLM) multi-agent systems are increasingly deployed as interacting agent
+    societies, yet scaling these systems often yields diminishing or unstable returns, the causes of
+    which remain poorly understood. We present the first large-scale empirical study of coordination
+    dynamics in LLM-based multi-agent systems, introducing an atomic event-level formulation that
+    reconstructs reasoning as cascades of coordination. Analyzing over 1.5 Million interactions across
+    tasks, topologies, and scales, we uncover three coupled laws: coordination follows heavy-tailed
+    cascades, concentrates via preferential attachment into intellectual elites, and produces
+    increasingly frequent extreme events as system size grows. We show that these effects are coupled
+    through a single structural mechanism: an integration bottleneck, in which coordination expansion
+    scales with system size while consolidation does not, producing large but weakly integrated
+    reasoning processes. To test this mechanism, we introduce Deficit-Triggered Integration (DTI), which
+    selectively increases integration under imbalance. DTI improves performance precisely where
+    coordination fails, without suppressing large-scale reasoning. Together, our results establish
+    quantitative laws of collective cognition and identify coordination structure as a fundamental,
+    previously unmeasured axis for understanding and improving scalable multi-agent intelligence.
+  abstract_highlights:
+    - "power laws"
+    - "heavy-tailed"
+    - "1.5 million"
+    - "coordination"
+- id: physicsagentabm
+  year: '2026'
+  title: 'PhysicsAgentABM: Physics-Guided Generative Agent-Based Modeling'
+  authors: Kavana Venkatesh, Yinhan He, Jundong Li, Jiaming Cui
+  venue: NeurIPS 2026 · SocialAgent Workshop
+  venue_note: Workshop
+  venue_kind: workshop
+  area: agents
+  area_name: Agentic AI & safety
+  summary: A neuro-symbolic generative agent-based modeling approach that combines mechanistic transition priors,
+    cluster-level inference, and uncertainty-aware fusion for scalable simulation.
+  arxiv: https://arxiv.org/abs/2602.06030
+  project: ''
+  bibkey: venkatesh2026physicsagentabm
+  doi: ''
+  figure: ''
+  citation: 'Kavana Venkatesh, Yinhan He, Jundong Li, Jiaming Cui (2026). PhysicsAgentABM: Physics-Guided Generative
+    Agent-Based Modeling. NeurIPS 2026 · SocialAgent Workshop. https://arxiv.org/abs/2602.06030'
+  abstract: >-
+    Large language model (LLM)-based multi-agent systems enable expressive agent reasoning but are
+    expensive to scale and poorly calibrated for timestep-aligned state-transition simulation, while
+    classical agent-based models (ABMs) offer interpretability but struggle to integrate rich
+    individual-level signals and non-stationary behaviors. We propose PhysicsAgentABM, which shifts
+    inference to behaviorally coherent agent clusters: state-specialized symbolic agents encode
+    mechanistic transition priors, a multimodal neural transition model captures temporal and
+    interaction dynamics, and uncertainty-aware epistemic fusion yields calibrated cluster-level
+    transition distributions. Individual agents then stochastically realize transitions under local
+    constraints, decoupling population inference from entity-level variability. We further introduce
+    ANCHOR, an LLM agent-driven clustering strategy based on cross-contextual behavioral responses and a
+    novel contrastive loss, reducing LLM calls by up to 6-8 times. Experiments across public health,
+    finance, and social sciences show consistent gains in event-time accuracy and calibration over
+    mechanistic, neural, and LLM baselines. By re-architecting generative ABM around population-level
+    inference with uncertainty-aware neuro-symbolic fusion, PhysicsAgentABM establishes a new paradigm
+    for scalable and calibrated simulation with LLMs.
+  abstract_highlights:
+    - "agent-based"
+    - "clustering"
+    - "mechanism"
+    - "uncertainty"
+- id: crea
+  year: '2025'
+  title: 'CREA: A Collaborative Multi-Agent Framework for Creative Image Editing and Generation'
+  authors: Kavana Venkatesh*, Connor Dunlop*, Pinar Yanardag
+  venue: NeurIPS 2025
+  venue_note: Main conference · *Equal contribution
+  venue_kind: main
+  area: vision
+  area_name: Generative vision
+  summary: Specialized collaborating agents iteratively propose, critique, and refine creative image edits
+    in a diffusion-based generative workflow.
+  arxiv: https://arxiv.org/abs/2504.05306
+  project: https://crea-diffusion.github.io/
+  bibkey: venkatesh2025crea
+  doi: ''
+  figure: ''
+  citation: 'Kavana Venkatesh, Connor Dunlop, Pinar Yanardag (2025). CREA: A Collaborative Multi-Agent Framework
+    for Creative Image Editing and Generation. NeurIPS 2025. https://arxiv.org/abs/2504.05306'
+  abstract: >-
+    Creativity in AI imagery remains a fundamental challenge, requiring not only the generation of
+    visually compelling content but also the capacity to add novel, expressive, and artistically rich
+    transformations to images. Unlike conventional editing tasks that rely on direct prompt-based
+    modifications, creative image editing requires an autonomous, iterative approach that balances
+    originality, coherence, and artistic intent. To address this, we introduce CREA, a novel multi-agent
+    collaborative framework that mimics the human creative process. Our framework leverages a team of
+    specialized AI agents who dynamically collaborate to conceptualize, generate, critique, and enhance
+    images. Through extensive qualitative and quantitative evaluations, we demonstrate that CREA
+    significantly outperforms state-of-the-art methods in diversity, semantic alignment, and creative
+    transformation. To the best of our knowledge, this is the first work to introduce the task of
+    creative editing.
+  abstract_highlights:
+    - "creativity"
+    - "collaborative"
+    - "multi-agent"
+    - "creative image editing"
+- id: personalized
+  year: '2025'
+  title: Personalized Image Editing in Text-to-Image Diffusion Models via Collaborative Direct Preference Optimization
+  authors: Connor Dunlop, Matthew Zheng*, Kavana Venkatesh*, Pinar Yanardag
+  venue: NeurIPS 2025
+  venue_note: Main conference · *Equal contribution
+  venue_kind: main
+  area: vision
+  area_name: Generative vision
+  summary: Collaborative Direct Preference Optimization adapts text-to-image edits to individual tastes while
+    leveraging signals shared across related users.
+  arxiv: https://arxiv.org/abs/2511.05616
+  project: https://personalized-editing.github.io/
+  bibkey: dunlop2025personalized
+  doi: ''
+  figure: ''
+  citation: Connor Dunlop, Matthew Zheng, Kavana Venkatesh, Pinar Yanardag (2025). Personalized Image Editing
+    in Text-to-Image Diffusion Models via Collaborative Direct Preference Optimization. NeurIPS 2025. https://arxiv.org/abs/2511.05616
+  abstract: >-
+    Text-to-image (T2I) diffusion models have made remarkable strides in generating and editing
+    high-fidelity images from text. Yet, these models remain fundamentally generic, failing to adapt to
+    the nuanced aesthetic preferences of individual users. In this work, we present the first framework
+    for personalized image editing in diffusion models, introducing Collaborative Direct Preference
+    Optimization (C-DPO), a novel method that aligns image edits with user-specific preferences while
+    leveraging collaborative signals from like-minded individuals. Our approach encodes each user as a
+    node in a dynamic preference graph and learns embeddings via a lightweight graph neural network,
+    enabling information sharing across users with overlapping visual tastes. We enhance a diffusion
+    model's editing capabilities by integrating these personalized embeddings into a novel DPO
+    objective, which jointly optimizes for individual alignment and neighborhood coherence.
+    Comprehensive experiments, including user studies and quantitative benchmarks, demonstrate that our
+    method consistently outperforms baselines in generating edits that are aligned with user
+    preferences.
+  abstract_highlights:
+    - "personalized image editing"
+    - "user preferences"
+    - "preference optimization"
+    - "benchmark"
+- id: fluxspace
+  year: '2025'
+  title: 'FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers'
+  authors: Yusuf Dalva, Kavana Venkatesh, Pinar Yanardag
+  venue: CVPR 2025
+  venue_note: Main conference
+  venue_kind: main
+  area: vision
+  area_name: Generative vision
+  summary: Disentangled semantic representations for controllable image editing in rectified-flow transformers,
+    including Flux.
+  arxiv: https://arxiv.org/abs/2412.09611
+  project: https://fluxspace.github.io/
+  bibkey: dalva2025fluxspace
+  doi: ''
+  figure: ''
+  citation: 'Yusuf Dalva, Kavana Venkatesh, Pinar Yanardag (2025). FluxSpace: Disentangled Semantic Editing
+    in Rectified Flow Transformers. CVPR 2025. https://arxiv.org/abs/2412.09611'
+  abstract: >-
+    Rectified flow models have emerged as a dominant approach in image generation, showcasing impressive
+    capabilities in high-quality image synthesis. However, despite their effectiveness in visual
+    generation, rectified flow models often struggle with disentangled editing of images. This
+    limitation prevents the ability to perform precise, attribute-specific modifications without
+    affecting unrelated aspects of the image. In this paper, we introduce FluxSpace, a domain-agnostic
+    image editing method leveraging a representation space with the ability to control the semantics of
+    images generated by rectified flow transformers, such as Flux. By leveraging the representations
+    learned by the transformer blocks within the rectified flow models, we propose a set of semantically
+    interpretable representations that enable a wide range of image editing tasks, from fine-grained
+    image editing to artistic creation. This work offers a scalable and effective image editing
+    approach, along with its disentanglement capabilities.
+  abstract_highlights:
+    - "rectified flow"
+    - "semantic editing"
+    - "disentangled"
+    - "FLUX"
+- id: induction
+  year: '2018'
+  title: Fault Analysis and Predictive Maintenance of Induction Motor Using Machine Learning
+  authors: V. Kavana, M. Neethi
+  venue: IEEE ICEECCOT 2018
+  venue_note: Conference proceedings
+  venue_kind: conference
+  area: applied
+  area_name: Earlier applied ML
+  summary: Machine-learning-based detection and classification of induction motor faults using voltage and
+    current measurements.
+  arxiv: ''
+  project: ''
+  doi: https://doi.org/10.1109/ICEECCOT43722.2018.9001543
+  bibkey: kavana2018fault
+  figure: ''
+  citation: V. Kavana, M. Neethi (2018). Fault Analysis and Predictive Maintenance of Induction Motor Using
+    Machine Learning. IEEE ICEECCOT 2018. https://doi.org/10.1109/ICEECCOT43722.2018.9001543
+  abstract: >-
+    Induction motors are one of the most crucial electrical equipment and are extensively used in
+    industries in a wide range of applications. This paper presents a machine learning model for the
+    fault detection and classification of induction motor faults by using three phase voltages and
+    currents as inputs. The aim of this work is to protect vital electrical components and to prevent
+    abnormal event progression through early detection and diagnosis. This work presents a fast forward
+    artificial neural network model to detect some of the commonly occurring electrical faults like
+    overvoltage, under voltage, single phasing, unbalanced voltage, overload, ground fault. A separate
+    model free monitoring system wherein the motor itself acts like a sensor is presented and the only
+    monitored signals are the input given to the motor. Limits for current and voltage values are set
+    for the faulty and healthy conditions, which is done by a classifier. Real time data from a 0.33 HP
+    induction motor is used to train and test the neural network. The model so developed analyses the
+    voltage and current values given at a particular instant and classifies the data into no fault or
+    the specific fault. The model is then interfaced with a real motor to accurately detect and classify
+    the faults so that further necessary action can be taken.
+  abstract_highlights:
+    - "fault detection and classification"
+    - "three phase voltages and currents"
+    - "artificial neural network"
+    - "0.33 HP induction motor"

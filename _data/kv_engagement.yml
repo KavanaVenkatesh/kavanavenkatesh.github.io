@@ -1,0 +1,256 @@
+teaching:
+- institution: Virginia Tech
+  role: Graduate Teaching Assistant
+  courses:
+  - code: CS 4824
+    name: Machine Learning
+    semester: Fall 2025
+    level: Undergraduate
+    course_url: https://sites.google.com/view/dawei-zhou/teaching
+    instructor: Dr. Dawei Zhou
+    instructor_url: https://sites.google.com/view/dawei-zhou/home
+    description: Foundations and practical methods in machine learning, including supervised learning, representation learning,
+      probabilistic models, and deep learning.
+  - code: CS 5805
+    name: Machine Learning I
+    semester: Spring 2025
+    level: Graduate
+    course_url: https://students.cs.vt.edu/Graduate/Courses/GradCourseDescriptions.html
+    instructor: Dr. Naren Ramakrishnan
+    instructor_url: https://website.cs.vt.edu/people/faculty/naren-ramakrishnan.html
+    description: Graduate machine learning, including classification, clustering, regression, probabilistic foundations, and
+      anomaly detection.
+  - code: CS 4804
+    name: Introduction to Artificial Intelligence
+    semester: Fall 2024
+    level: Undergraduate
+    course_url: https://courses.cs.vt.edu/~cs4804/Fall24/
+    instructor: Dr. Yinlin Chen
+    instructor_url: https://yinlinchen.com/
+    description: Foundations of artificial intelligence, including search, reasoning, game playing, natural language processing,
+      and machine learning.
+- institution: Northeastern University
+  role: Graduate Teaching Assistant
+  courses:
+  - code: DS 2000
+    name: Programming with Data
+    semester: Fall 2020 and Fall 2021
+    level: Undergraduate
+    course_url: https://catalog.northeastern.edu/course-descriptions/ds/
+    instructor: ''
+    instructor_url: ''
+    description: Introduction to Python programming, working with data, and data visualization for students across disciplines.
+reviewing:
+  conferences:
+  - name: International Conference on Machine Learning
+    short: ICML
+    url: https://icml.cc/
+  - name: Conference on Neural Information Processing Systems
+    short: NeurIPS
+    url: https://neurips.cc/
+  - name: Annual Meeting of the Association for Computational Linguistics
+    short: ACL
+    url: https://www.aclweb.org/portal/
+  - name: Conference on Empirical Methods in Natural Language Processing
+    short: EMNLP
+    url: https://aclanthology.org/venues/emnlp/
+  - name: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+    short: CVPR
+    url: https://cvpr.thecvf.com/
+  - name: European Conference on Computer Vision
+    short: ECCV
+    url: https://eccv.ecva.net/
+  - name: AAAI Conference on Artificial Intelligence
+    short: AAAI
+    url: https://aaai.org/conference/aaai/
+  journals:
+  - name: Transactions on Machine Learning Research
+    short: TMLR
+    url: https://jmlr.org/tmlr/
+  - name: ACM Transactions on Intelligent Systems and Technology
+    short: ACM TIST
+    url: https://dl.acm.org/journal/tist
+  recognition:
+  - name: Outstanding Reviewer
+    organization: CVPR 2026
+    year: '2026'
+  - name: Gold Reviewer
+    organization: ICML 2026
+    year: '2026'
+selected_talks:
+- year: '2024'
+  kind: Invited talk
+  title: 'Crafting Balance: The Dual-Edged Sword of Open-Source LLMs in the Quest for Responsible AI'
+  primary_url: https://www.cics.umass.edu/news/voices-data-science-encourages-critical-think
+  venue: Voices of Data Science 2024
+  venue_url: https://groups.cs.umass.edu/pit/2024/02/28/march-8-event-voices-of-data-science/
+  context: March 8, 2024 · Amherst, Massachusetts
+  description: Invited talk on the opportunities and risks of open-source LLMs for responsible AI, including privacy, security,
+    bias, transparency, and deployment.
+  links:
+  - text: University coverage
+    url: https://www.cics.umass.edu/news/voices-data-science-encourages-critical-think
+  institution: University of Massachusetts Amherst
+  institution_url: https://www.cics.umass.edu/news/voices-data-science-encourages-critical-think
+- year: '2024'
+  kind: Workshop
+  title: 'Generative AI: A Two-Part Workshop'
+  primary_url: https://www.widsworldwide.org/events/event/wids-boston-northeastern-university/
+  venue: WiDS × Northeastern University
+  venue_url: https://www.widsworldwide.org/events/event/wids-boston-northeastern-university/
+  context: April 15–16, 2024 · Boston, Massachusetts
+  description: Two-day workshop introducing LLM applications and conversational agents, followed by RAG, fine-tuning, tools,
+    and responsible AI practices.
+  links:
+  - text: Workshop details
+    url: https://www.widsworldwide.org/events/event/wids-boston-northeastern-university/
+  institution: Women in Data Science Worldwide and Northeastern University
+  institution_url: https://www.widsworldwide.org/events/event/wids-boston-northeastern-university/
+- year: '2023'
+  kind: Webinar
+  title: 'Harnessing the Power of LLMs: A Deep Dive into Practical Solutions'
+  primary_url: https://www.linkedin.com/feed/update/urn:li:activity:7120825925901910016/
+  venue: Analytics Vidhya · DataHour
+  venue_url: https://www.analyticsvidhya.com/
+  context: October 24, 2023 · Online
+  description: DataHour webinar on practical applications of large language models, from common use cases to implementation
+    considerations.
+  links:
+  - text: Event announcement
+    url: https://www.linkedin.com/feed/update/urn:li:activity:7120825925901910016/
+  institution: Analytics Vidhya
+  institution_url: https://www.analyticsvidhya.com/
+- year: '2023'
+  kind: Workshop
+  title: Data Science Résumé Workshop
+  primary_url: https://www.linkedin.com/posts/kavanavenkatesh_resume-resumetips-datascience-activity-7029866826041831426-oqqh
+  venue: Northeastern University
+  venue_url: https://www.northeastern.edu/
+  context: Boston, Massachusetts
+  description: Student workshop on structuring a data science résumé, presenting technical projects, and preparing job applications.
+  links:
+  - text: Workshop recap
+    url: https://www.linkedin.com/posts/kavanavenkatesh_resume-resumetips-datascience-activity-7029866826041831426-oqqh
+  institution: Northeastern University
+  institution_url: https://www.northeastern.edu/
+- year: '2023'
+  kind: Workshop
+  title: 'Machine Learning in Production: Best Practices'
+  venue: Northeastern University
+  venue_url: https://www.northeastern.edu/
+  context: March 2023 · Boston, Massachusetts
+  description: Guest workshop on machine learning in production, with attention to deployment workflows and practical engineering
+    considerations.
+  institution: Northeastern University
+  institution_url: https://www.northeastern.edu/
+- year: '2023'
+  kind: Panel discussion
+  title: Data Science Industry Panel
+  venue: Data Science Industry Panel
+  venue_url: https://www.northeastern.edu/
+  context: April 2023 · Boston, Massachusetts
+  description: Panelist alongside other industry professionals, discussing roles in data science, career pathways, and experiences
+    working in the field.
+  institution: Northeastern University
+  institution_url: https://www.northeastern.edu/
+moments:
+- id: topmate-recognition
+  category: community
+  image: /assets/images/community/topmate-top-one-percent.webp
+  alt: Complete Topmate Top 1% North America recognition featuring Kavana Venkatesh
+  place: Topmate · North America · 2025
+  caption: Recognized among Topmate’s Top 1% creators in North America.
+  links:
+  - text: Topmate profile
+    url: https://topmate.io/kavana_venkatesh
+- id: wids
+  category: workshop
+  image: /assets/images/community/wids-genai-2024.webp
+  alt: Event announcement for the two-day WiDS generative AI workshop at Northeastern University
+  place: WiDS × Northeastern · April 2024
+  caption: Two-day Generative AI workshop with Women in Data Science and Northeastern University, April 15 and 16, 2024.
+  links:
+  - text: WiDS event
+    url: https://www.widsworldwide.org/events/event/wids-boston-northeastern-university/
+- id: resumé
+  category: workshop
+  image: /assets/images/community/resume-workshop.webp
+  alt: Kavana leading a résumé workshop in a classroom full of students
+  place: Northeastern University · 2023
+  caption: Leading the Data Science Résumé Workshop, covering application materials and communicating technical project experience.
+  links:
+  - text: Workshop recap
+    url: https://www.linkedin.com/posts/kavanavenkatesh_resume-resumetips-datascience-activity-7029866826041831426-oqqh
+- id: datahour
+  category: talk
+  image: /assets/images/community/datahour-2023.webp
+  alt: Analytics Vidhya DataHour 2023 event announcement featuring Kavana
+  place: Analytics Vidhya · October 24, 2023
+  caption: 'DataHour webinar: “Harnessing the Power of LLMs: A Deep Dive into Practical Solutions.”'
+  links:
+  - text: Event post
+    url: https://www.linkedin.com/feed/update/urn:li:activity:7120825925901910016/
+- id: panel
+  category: community
+  image: /assets/images/community/wids-community.webp
+  alt: Audience and group photograph from the Northeastern Data Science Industry Panel, including Kavana and fellow panelists
+  place: Data Science Industry Panel · Northeastern University
+  caption: Panel discussion on careers in data science at Northeastern University. I joined fellow panelists to discuss professional
+    experiences and industry pathways.
+  links: []
+- id: ml
+  category: workshop
+  image: /assets/images/community/ml-workshop.webp
+  alt: Flyer announcing a university Machine Learning workshop with Kavana as a guest speaker
+  place: Machine Learning Workshop · Northeastern University
+  caption: Guest speaker for a student machine learning workshop hosted by Graduate Women Coders at Northeastern University.
+- id: lecture
+  category: talk
+  image: /assets/images/community/lecture-moment.webp
+  alt: Kavana speaking to an audience from the front of a lecture hall
+  place: UMass Amherst · March 8, 2024
+  caption: Invited speaker at UMass Amherst Voices of Data Science 2024, presenting a talk on open-source LLMs and responsible
+    AI.
+  links:
+  - text: UMass coverage
+    url: https://www.cics.umass.edu/news/voices-data-science-encourages-critical-think
+mentoring:
+- title: PRISM Pathways Coach
+  years: 2026–present
+  text: Mentor aspiring and current Ph.D. students pursuing AI safety research, from research direction to doctoral applications.
+- title: One-to-one mentoring · Topmate
+  years: Ongoing
+  text: Offer résumé reviews, interview preparation, career guidance, and individual mentoring for students and practitioners.
+  url: https://topmate.io/kavana_venkatesh
+- title: Women in Data Science
+  years: 2024–present
+  text: WiDS Worldwide Ambassador; contributed to university workshops and events involving women in data science and AI.
+  url: https://www.widsworldwide.org/events/event/wids-boston-northeastern-university/
+- title: Women in Big Data
+  years: '2024'
+  text: Mentored and supported early-career learners in data science and technology.
+writing:
+  image: /assets/images/community/book-release.webp
+  alt: My high-school teacher inaugurating my first Kannada poetry book Anthargami at a ceremony in Chikmagalur in 2012
+  title: Writing in Kannada
+  text: My first poetry book, Anthargami, was inaugurated by my high-school teacher in Chikmagalur, Karnataka, in 2012. I
+    continue to write in Kannada and publish work online.
+  links:
+  - text: Kannada writing · Readoo
+    url: https://kannada.readoo.in/author/kavana-vasishta
+  - text: Pratilipi
+    url: https://kannada.pratilipi.com/user/%E0%B2%95%E0%B2%B5%E0%B2%A8-%E0%B2%B5%E0%B2%BF-%E0%B2%B5%E0%B2%B8%E0%B2%BF%E0%B2%B7%E0%B3%8D%E0%B2%A0-yxczlmvwb6
+  - text: Spotify
+    url: https://open.spotify.com/artist/2kW2ZkHKupE94f2Fp13nqF
+recognition_photo:
+  image: /assets/images/community/topmate-times-square-2025.webp
+  badge_image: /assets/images/community/topmate-top-one-percent.webp
+  title: A note from Times Square
+  date: '2025'
+  text: Featured on a Times Square billboard as a Topmate Top 1% creator in North America, recognizing work around mentoring
+    and sharing knowledge.
+  links:
+  - text: Topmate profile
+    url: https://topmate.io/kavana_venkatesh
+  - text: LinkedIn post
+    url: https://www.linkedin.com/feed/update/urn:li:activity:7493694016530759680/

@@ -1,0 +1,38 @@
+---
+layout: kv-vintage
+permalink: /cv/
+title: Curriculum Vitae
+author_profile: false
+---
+<link rel="stylesheet" href="{{ '/assets/css/cv.css' | relative_url }}">
+<article class="kcv" data-kcv>
+<div class="kcv-readbar" aria-hidden="true"><span data-kcv-progress></span></div>
+<header class="kcv-cover" id="cv-top">
+ <div class="kcv-shell kcv-cover-content">
+  <div class="kcv-cover-left">
+   <p class="kcv-stamp"><span class="kcv-stamp-flower" aria-hidden="true">✻</span> KAVANA VENKATESH <span class="kcv-stamp-divider">/</span> SELECTED ACADEMIC RECORD</p>
+   <h1>Curriculum<br><em>Vitae.</em></h1>
+   <p class="kcv-hero-sub">A selective record of research, experience, teaching, and service, with brief descriptions and dates.</p>
+   <div class="kcv-cover-links"><a href="https://scholar.google.com/citations?user=ss9eXTQAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="{{ '/publications/' | relative_url }}">Complete bibliography ↗</a></div>
+  </div>
+  <div class="kcv-cover-right"><div class="kcv-paper-ornament" aria-hidden="true"><svg viewBox="0 0 300 170" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 146 Q70 142 109 85 Q126 63 144 25 M144 25 Q165 74 225 79 Q258 82 296 63" stroke="currentColor" stroke-width="1.5"/><path d="M55 130 Q65 97 44 85 Q23 99 55 130ZM86 110 Q113 100 104 72 Q75 83 86 110ZM111 86 Q93 62 111 42 Q133 61 111 86ZM165 54 Q187 19 215 27 Q202 57 165 54ZM207 75 Q234 40 261 45 Q247 76 207 75Z" stroke="currentColor" stroke-width="1.4"/><circle cx="144" cy="23" r="10" stroke="currentColor"/><path d="M144 9V37M130 23H158M134 13L154 33M154 13L134 33" stroke="currentColor"/></svg></div>
+   <span class="kcv-card-index">PROFILE / 2026</span>
+   <p class="kcv-card-role">Ph.D. Researcher<br><span>Computer Science</span></p><div class="kcv-rule"></div>
+   <dl><div><dt>Based at</dt><dd>Virginia Tech</dd></div><div><dt>Research</dt><dd>Agentic AI, multi-agent safety, collective behavior</dd></div><div><dt>Also</dt><dd>Generative modeling &amp; image editing</dd></div></dl>
+  </div>
+ </div>
+ <div class="kcv-cover-bottom"><span>RESEARCH / EDUCATION / SELECTED WORK / SERVICE</span><span>SCROLL TO READ ↓</span></div>
+</header>
+<div class="kcv-shell kcv-document">
+ <aside class="kcv-index" aria-label="CV chapters"><span class="kcv-index-label">CONTENTS</span><nav><a href="#cv-profile" class="is-active" data-kcv-nav><small>01</small> Research</a><a href="#cv-education" data-kcv-nav><small>02</small> Education</a><a href="#cv-work" data-kcv-nav><small>03</small> Selected work</a><a href="#cv-experience" data-kcv-nav><small>04</small> Experience</a><a href="#cv-service" data-kcv-nav><small>05</small> Teaching &amp; service</a></nav><div class="kcv-index-note">SELECTED CV<br>UPDATED 2026</div></aside>
+ <div class="kcv-pages">
+ <section class="kcv-section" id="cv-profile"><div class="kcv-section-head"><span>01 / RESEARCH</span><h2>Questions I <em>work on.</em></h2></div><p class="kcv-profile-text">I study how language-model agents coordinate, adapt, and sometimes fail together. My research focuses on safer multi-agent systems, emergent collective behavior, and reliable agent evaluation. I also work on generative vision and creative image modeling.</p><div class="kcv-focus-list">{% for item in site.data.kv_cv.focus %}<div class="kcv-focus-line"><span class="kcv-focus-no">0{{ forloop.index }}</span><div><h3>{{ item.title | escape }}</h3><p>{{ item.description | escape }}</p></div></div>{% endfor %}</div></section>
+ <section class="kcv-section" id="cv-education"><div class="kcv-section-head"><span>02 / EDUCATION</span><h2>Academic <em>training.</em></h2></div><div class="kcv-records">{% for item in site.data.kv_cv.education %}<div class="kcv-record"><div class="kcv-record-mark"><span>{{ item.period | escape }}</span></div><div><h3>{{ item.degree | escape }}</h3><p>{{ item.school | escape }} <span aria-hidden="true">·</span> {{ item.detail | escape }}</p></div></div>{% endfor %}</div></section>
+ <section class="kcv-section" id="cv-work"><div class="kcv-section-head"><span>03 / SELECTED PUBLICATIONS</span><h2>Selected <em>research.</em></h2></div><ol class="kcv-paper-list">{% for item in site.data.kv_cv.selected_publications %}<li class="kcv-paper"><span class="kcv-paper-year">{{ item.year | escape }}</span><div class="kcv-paper-content"><div class="kcv-paper-meta">{{ item.venue | escape }} <span aria-hidden="true">/</span> {{ item.kind | escape }}</div><a href="{{ item.url | escape }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }} <span aria-hidden="true">↗</span></a></div></li>{% endfor %}</ol><a class="kcv-more-link" href="{{ '/publications/' | relative_url }}">View the complete publications catalogue <span aria-hidden="true">↗</span></a></section>
+ <section class="kcv-section" id="cv-experience"><div class="kcv-section-head"><span>04 / EXPERIENCE</span><h2>Research &amp; <em>practice.</em></h2></div><div class="kcv-experience-group"><h3 class="kcv-subheading">Academic &amp; research affiliations</h3>{% for item in site.data.kv_cv.research_roles %}<div class="kcv-role"><div class="kcv-role-main"><h3>{{ item.title | escape }}</h3><span class="kcv-role-org">{{ item.organization | escape }}</span><ul class="kcv-role-bullets">{% for bullet in item.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}</ul></div><span class="kcv-role-period">{{ item.period | escape }}</span></div>{% endfor %}</div><div class="kcv-experience-group kcv-industrial"><h3 class="kcv-subheading">Selected industry experience</h3>{% for item in site.data.kv_cv.industry_roles %}<div class="kcv-role"><div class="kcv-role-main"><h3>{{ item.title | escape }}</h3><span class="kcv-role-org">{{ item.organization | escape }}</span><ul class="kcv-role-bullets">{% for bullet in item.bullets %}<li>{{ bullet | escape }}</li>{% endfor %}</ul></div><span class="kcv-role-period">{{ item.period | escape }}</span></div>{% endfor %}</div></section>
+ <section class="kcv-section" id="cv-service"><div class="kcv-section-head"><span>05 / TEACHING &amp; SERVICE</span><h2>Beyond the <em>research.</em></h2></div><div class="kcv-service-columns"><div class="kcv-service-part"><h3>Teaching</h3>{% for item in site.data.kv_cv.teaching %}<div class="kcv-teach-line"><div class="kcv-teach-line-head"><strong>{{ item.institution | escape }}</strong><small>{{ item.period | escape }}</small></div><span>{{ item.summary | escape }}</span></div>{% endfor %}<a class="kcv-sub-link" href="{{ '/talks/' | relative_url }}">Talks and teaching activities ↗</a></div><div class="kcv-service-part"><h3>Peer review</h3><p class="kcv-review-venues">ICML · NeurIPS · ACL · EMNLP · CVPR · ECCV · AAAI · TMLR · ACM TIST</p><div class="kcv-honors">{% for item in site.data.kv_cv.recognition %}<div class="kcv-honor"><strong>{{ item.name | escape }}</strong><span>{{ item.context | escape }}</span></div>{% endfor %}</div></div></div><div class="kcv-community"><h3>Mentorship &amp; outreach</h3>{% for item in site.data.kv_cv.community %}<div class="kcv-community-row"><strong>{{ item.name | escape }}</strong><p>{{ item.detail | escape }}</p><small>{{ item.period | escape }}</small></div>{% endfor %}</div></section>
+ <footer class="kcv-end"><div class="kcv-end-symbol" aria-hidden="true">✣</div><p>For a fuller bibliography and ongoing projects, see the <a href="{{ '/publications/' | relative_url }}">publications catalogue</a> and <a href="{{ '/research/' | relative_url }}">research page</a>.</p><span>END OF SELECTED RECORD</span></footer>
+ </div>
+</div>
+</article>
+<script defer src="{{ '/assets/js/cv.js' | relative_url }}"></script>

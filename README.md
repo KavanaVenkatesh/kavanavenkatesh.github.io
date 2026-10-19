@@ -1,77 +1,53 @@
-# Academic Pages
-**Academic Pages is a Github Pages template for academic websites.**
+# Homepage final polish: nine-note bulletin, links, and profile actions
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+This is an intentionally **small patch** for your Jekyll academic website.
+It is based on the homepage version with four working research video loops.
 
-# Getting Started
+## What it changes
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+- Displays **the nine newest** news notes, sorted by date, in the bulletin.
+- Keeps all older notes in the expandable Old News drawer, without duplication.
+- Makes the **PRISM AI Safety Research Fellowship** text in its bulletin headline link to https://prism-research.org/.
+- Links **NeurIPS 2025** and **Amazon Science** from their newly surfaced 2025 notes.
+- Removes only the redundant “And in the margins” homepage section. Your dedicated Talks, Teaching & Art page remains intact.
+- Replaces only the **portrait/profile CV chip** with a link to your verified X profile, https://x.com/kavanav2912. The global CV page and navigation entry remain intact.
+- Confirms the portrait **Email** chip uses `mailto:kavanav@vt.edu` and labels its address accessibly. This opens your configured email app. If your browser or OS has no registered mail handler, the website cannot force one to launch; the email address itself is correct.
 
-See more info at https://academicpages.github.io/
+No publication-video HTML, media, site-wide navigation, Research, Publications, Talks, or CV files are changed.
 
-## Running locally
+## Recommended installation (safe for custom homepage edits)
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-Start by build the container:
+1. Extract the ZIP on your computer.
+2. Copy only `scripts/install_final_homepage_polish.py` into your existing repository at the same path.
+3. In Terminal, `cd` into your existing Jekyll repository root, then run:
 
 ```bash
-docker build -t jekyll-site .
+python3 scripts/install_final_homepage_polish.py
 ```
 
-Next, run the container:
+The script uses only the Python standard library. It updates your current `_pages/about.html` and `_data/home_news.yml` in place, **after creating timestamped backups** alongside them. It preserves all unrelated changes and can be rerun without creating duplicates.
+
+If your Jekyll server is already running, refresh `http://127.0.0.1:4001/` after Jekyll regenerates. Otherwise start it with:
+
 ```bash
-docker run -p 4000:4000 --rm -v $(pwd):/usr/src/app jekyll-site
+bundle exec jekyll serve --livereload --port 4001
 ```
 
-# Maintenance
+Then hard-refresh the browser using Cmd + Shift + R.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Manual alternative
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+The supplied `_pages/about.html` and `_data/home_news.yml` are complete reference outputs. You may copy them directly **only if** your website uses exactly the provided base version and you have no local custom changes. Otherwise prefer the installer.
 
-## Bugfixes and enhancements
+## Before merging / pushing
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+- Confirm that all 4 publication animations still play.
+- Confirm exactly 9 notes appear, clicking **Research** and **Life & community** filters them, and the Old News drawer opens.
+- Click the PRISM, NeurIPS 2025, and Amazon Science links.
+- Check the portrait X button and email address.
+- Confirm the redundant homepage margins section is gone.
+- Run `git status --short` and `git diff -- _pages/about.html _data/home_news.yml`.
+- Do not add `*.backup-*` files to Git when committing.
+- Merge your completed redesign branch into the GitHub Pages publishing branch only after reviewing the full site locally.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+This ZIP does **not** include the four publication MP4s, their posters, or the CSS/JS from the previous animations integration. Those should remain in place from the prior successful install.

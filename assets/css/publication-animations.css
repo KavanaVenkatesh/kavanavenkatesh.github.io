@@ -1,0 +1,5 @@
+/* Publication media only. The existing homepage layout, colors and cards are unchanged. */
+.kv-home-v2 .kv-pubs-figure-mat--animated { overflow: hidden; padding: 12px; background: #fffefa; }
+.kv-home-v2 .kv-pub-loop { display:block; width:100%; max-width:100%; aspect-ratio:5 / 3; height:auto; object-fit:contain; object-position:center; background:#fffefa; }
+.kv-home-v2 .kv-pubs-figure-mat--animated .kv-pubs-crop { z-index:2; pointer-events:none; }
+@media (max-width:720px) { .kv-home-v2 .kv-pubs-figure-mat--animated { padding: 9px; } }

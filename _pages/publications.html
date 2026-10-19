@@ -1,272 +1,88 @@
 ---
-layout: archive
-title: "Publications"
+layout: kv-vintage
 permalink: /publications/
-author_profile: False
+title: Publications
+author_profile: false
 ---
-
-<style>
-  .publication-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 2px;
-    position: relative;
-    padding-right: 100px; /* reserve room so text never slides under the badge */
-  }
-
-  .teaser-container {
-    flex-shrink: 0;
-    margin-right: 25px;
-    margin-top: 5px;
-    width: 180px;   /* standard width for all teasers */
-    height: 120px;  /* standard height for all teasers */
-    display: flex;
-    align-items: flex-start;    /* aligns images to the top line of the title */
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .teaser-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;        /* shows full image without cropping */
-    object-position: top;       /* ensures the top of images align perfectly */
-    display: block;
-    border-radius: 4px;
-  }
-
-  .venue-badge {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    background: #bb6bd9;
-    color: white;
-    font-size: 0.75em;
-    font-weight: bold;
-    padding: 4px 10px;
-    border-radius: 6px;
-    white-space: nowrap;
-    box-shadow:
-      inset 0 1px 2px rgba(255, 255, 255, 0.2),
-      inset 0 -1px 2px rgba(0, 0, 0, 0.2),
-      0 2px 6px rgba(0, 0, 0, 0.15);
-  }
-
-  .pub-details {
-    flex: 1;
-    min-width: 0; /* allow text to wrap instead of overflowing the flex row */
-  }
-
-  .pub-title {
-    color: #d63384;
-    font-size: 1.1em;
-    font-weight: normal;
-    margin-top: 0;
-  }
-
-  .pub-authors {
-    margin: 0;
-    color: #4a4a4a;
-    font-size: 0.9em;
-  }
-
-  .pub-venue {
-    margin: 2px 0 5px 0;
-    font-size: 0.9em;
-    font-style: italic;
-    color: #000000;
-    font-weight: normal;
-  }
-
-  .pub-buttons {
-    display: flex;
-    flex-wrap: wrap; /* let buttons flow onto multiple lines instead of overflowing */
-    gap: 5px;
-    margin-top: 5px;
-  }
-
-  .pub-buttons a,
-  .pub-buttons button {
-    padding: 3px 8px;
-    border: 1px solid black;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.85em;
-    background: none;
-    cursor: pointer;
-  }
-
-  .pub-abstract {
-    display: none;
-    border: 1px dotted #ccc;
-    padding: 5px;
-    font-size: 0.9em;
-  }
-
-  .pub-bibtex {
-    display: none;
-    background: #f3e5f5;
-    padding: 10px;
-    border-radius: 8px;
-    font-family: 'Courier New', Courier, monospace;
-    position: relative;
-    font-size: 0.9em;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  .pub-year {
-    text-align: right;
-    color: #ddd;
-    font-size: 2.2em;
-    font-weight: 700;
-    line-height: 1;
-    margin: 18px 0 2px;
-  }
-
-  /* ---- Mobile: stack image above text, badge inline, buttons wrap ---- */
-  @media (max-width: 600px) {
-    .publication-item {
-      flex-direction: column;
-      align-items: center;
-      padding-right: 0;
-    }
-
-    .teaser-container {
-      margin-right: 0;
-      margin-bottom: 12px;
-      width: 100%;
-      max-width: 220px; /* centered, capped so small teasers don't blow up */
-      height: auto;
-    }
-
-    .teaser-container img {
-      height: auto;
-    }
-
-    .pub-details {
-      width: 100%;
-    }
-
-    .venue-badge {
-      position: static;
-      display: inline-block;
-      margin-bottom: 8px;
-      transform: none;
-    }
-
-    .pub-year {
-      font-size: 1.6em;
-      text-align: center;
-    }
-  }
-</style>
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap" style="margin-bottom: 15px;">
-    For an up-to-date list of my research papers, please see my <a href="{{site.author.googlescholar}}">Google Scholar</a>.
-  </div>
-{% endif %}
-
-{% include base_path %}
-
-<!-- Group papers by year -->
-{% assign grouped = site.publications | group_by: 'year' %}
-{% for group in grouped reversed %}
-  <div class="pub-year">{{ group.name }}</div>
-  {% for post in group.items %}
-    <div class="publication-item">
-      <!-- Display Teaser Image -->
-      {% if post.teaser %}
-        <div class="teaser-container">
-          <img src="{{ post.teaser }}" alt="Teaser for {{ post.title }}">
-        </div>
-      {% endif %}
-
-      <!-- Venue Badge -->
-      {% if post.venue_short %}
-        <div class="venue-badge">{{ post.venue_short }}</div>
-      {% endif %}
-
-      <!-- Display Details -->
-      <div class="pub-details">
-        <!-- Display Title -->
-        <h3 class="pub-title">{{ post.title }}</h3>
-
-        <!-- Display Authors with Links -->
-        {% if post.authors %}
-          <p class="pub-authors">
-            {% for author in post.authors %}
-              {% if author.name == "Kavana Venkatesh" %}
-                <span style="font-weight: bold; color: #1a73e8;">{{ author.name }}</span>
-              {% elsif author.website %}
-                <a href="{{ author.website }}" target="_blank" style="color: #007bff; text-decoration: none;">{{ author.name }}</a>
-              {% else %}
-                {{ author.name }}
-              {% endif %}
-              {% if forloop.last == false %}, {% endif %}
-            {% endfor %}
-          </p>
-        {% endif %}
-
-        <!-- Cute acceptance line -->
-        {% if post.venue %}
-          <p class="pub-venue">{{ post.venue }}</p>
-        {% endif %}
-
-        <!-- Buttons for Website, PDF, arXiv, Abstract, and BibTeX -->
-        <p class="pub-buttons">
-          {% if post.websiteurl %}
-            <a href="{{ post.websiteurl }}" target="_blank">Website</a>
-          {% endif %}
-          {% if post.paperurl %}
-            <a href="{{ post.paperurl }}" target="_blank">PDF</a>
-          {% endif %}
-          {% if post.arxivurl %}
-            <a href="{{ post.arxivurl }}" target="_blank">arXiv</a>
-          {% endif %}
-          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'abstract')">Abstract</button>
-          <button onclick="toggleContent('content-{{ group.name }}-{{ forloop.index }}', 'bibtex')">BibTeX</button>
-        </p>
-
-        <div id="content-{{ group.name }}-{{ forloop.index }}" style="padding: 5px; margin-top: 5px;">
-          <!-- Abstract Section -->
-          <div id="content-{{ group.name }}-{{ forloop.index }}-abstract" class="pub-abstract">
-            {{ post.abstract }}
-          </div>
-
-          <!-- BibTeX Section -->
-          <div id="content-{{ group.name }}-{{ forloop.index }}-bibtex" class="pub-bibtex">
-            <button onclick="copyBibTeX('bibtex-content-{{ group.name }}-{{ forloop.index }}')" style="position: absolute; top: 5px; right: 5px; background: none; border: none; cursor: pointer;">
-              <span id="copy-icon-{{ group.name }}-{{ forloop.index }}">📋</span>
-            </button>
-            <pre id="bibtex-content-{{ group.name }}-{{ forloop.index }}" style="margin: 0; padding: 5px;">{{ post.bibtex }}</pre>
-          </div>
+<link rel="stylesheet" href="{{ '/assets/css/publications.css' | relative_url }}">
+<main class="kvl" data-kvl>
+  <header class="kvl-opening" id="top">
+    <div class="kvl-wrap kvl-opening-grid">
+      <div class="kvl-opening-text">
+        <div class="kvl-overline">KAVANA VENKATESH <span aria-hidden="true">✳</span> RESEARCH LIBRARY</div>
+        <h1>Publications<span class="kvl-title-mark">.</span></h1>
+        <p class="kvl-lede">A catalogue of papers, proceedings &amp; preprints.</p>
+        <a class="kvl-external" href="https://scholar.google.com/citations?user=ss9eXTQAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="kvl-furniture" aria-label="Decorative vintage library cabinet with a drawer that opens to the publication catalogue">
+        <div class="kvl-cabinet-top" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="kvl-cabinet">
+          <a href="#kvl-catalogue" class="kvl-drawer kvl-drawer-first" aria-label="Browse publication catalogue">
+            <span class="kvl-drawer-card" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="kvl-drawer-face"><span class="kvl-drawer-plate">PAPERS</span><span class="kvl-drawer-pull" aria-hidden="true"></span></span>
+          </a>
+          <div class="kvl-drawer"><span class="kvl-drawer-face"><span class="kvl-drawer-plate">NOTES</span><span class="kvl-drawer-pull"></span></span></div>
+          <div class="kvl-drawer"><span class="kvl-drawer-face"><span class="kvl-drawer-plate">ARCHIVE</span><span class="kvl-drawer-pull"></span></span></div>
+          <div class="kvl-cabinet-legs" aria-hidden="true"></div>
         </div>
       </div>
     </div>
-  {% endfor %}
-{% endfor %}
-
-<script>
-function toggleContent(id, type) {
-  const abstract = document.getElementById(id + '-abstract');
-  const bibtex = document.getElementById(id + '-bibtex');
-  if (type === 'abstract') {
-    abstract.style.display = abstract.style.display === 'block' ? 'none' : 'block';
-    bibtex.style.display = 'none';
-  } else {
-    bibtex.style.display = bibtex.style.display === 'block' ? 'none' : 'block';
-    abstract.style.display = 'none';
-  }
-}
-
-function copyBibTeX(id) {
-  const text = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(text).then(() => {
-    const icon = document.getElementById(`copy-icon-${id.split('-').slice(2).join('-')}`);
-    icon.textContent = '✔️';
-    setTimeout(() => icon.textContent = '📋', 2000);
-  });
-}
-</script>
+  </header>
+  <section class="kvl-catalogue" id="kvl-catalogue" aria-label="Publications catalogue">
+    <div class="kvl-wrap">
+      <div class="kvl-wood-top" aria-hidden="true"><span class="kvl-brass-line"></span></div>
+      <div class="kvl-index-desk">
+        <div class="kvl-index-top"><strong>Browse the collection</strong><span role="status" aria-live="polite" id="kvl-count">All publications</span></div>
+        <div class="kvl-filter-bar" role="group" aria-label="Filter publications by research area">
+          <button type="button" class="kvl-filter is-active" data-kvl-area="all" aria-pressed="true">All publications</button>
+          <button type="button" class="kvl-filter" data-kvl-area="agents" aria-pressed="false">Agentic AI &amp; Safety</button>
+          <button type="button" class="kvl-filter" data-kvl-area="vision" aria-pressed="false">Generative Vision</button>
+          <button type="button" class="kvl-filter" data-kvl-area="applied" aria-pressed="false">Applied ML</button>
+        </div>
+        <div class="kvl-tools">
+          <div class="kvl-search"><label for="kvl-search-input">Search the catalogue</label><input id="kvl-search-input" type="search" autocomplete="off" placeholder="Title, coauthor, venue, year…"></div>
+          <nav class="kvl-years" aria-label="Publication years">
+            {% assign year_list = site.data.kv_publications.papers | map: 'year' | uniq | sort | reverse %}
+            {% for y in year_list %}<a href="#kvl-year-{{ y }}">{{ y }}</a>{% endfor %}
+          </nav>
+        </div>
+      </div>
+      {% assign years = site.data.kv_publications.papers | group_by: 'year' | sort: 'name' | reverse %}
+      {% for year in years %}
+      <section class="kvl-year" id="kvl-year-{{ year.name }}" data-kvl-year aria-labelledby="kvl-heading-{{ year.name }}">
+        <div class="kvl-year-head"><h2 id="kvl-heading-{{ year.name }}">{{ year.name }}</h2><span>{{ year.items.size }} {% if year.items.size == 1 %}publication{% else %}publications{% endif %}</span></div>
+        <div class="kvl-stack">
+          {% for paper in year.items %}
+          <article class="kvl-record kvl-record--{{ paper.area }}" id="paper-{{ paper.id }}" data-kvl-record data-area="{{ paper.area }}" data-search="{{ paper.title | append: ' ' | append: paper.authors | append: ' ' | append: paper.venue | append: ' ' | append: paper.area_name | append: ' ' | append: paper.year | downcase | escape }}">
+            <div class="kvl-card-tab" aria-hidden="true"></div>
+            <div class="kvl-card-paper">
+              <div class="kvl-card-heading"><span class="kvl-paper-number">{{ year.name }} / {{ forloop.index }}</span><span class="kvl-venue kvl-venue--{{ paper.venue_kind }}">{{ paper.venue }}</span></div>
+              <h3>{{ paper.title }}</h3>
+              <p class="kvl-authors" aria-label="Authors">{% assign people = paper.authors | split: ', ' %}{% for person in people %}{% assign clean = person | remove: '*' | strip %}{% assign url = site.data.kv_publications.author_profiles[clean] %}{% if clean == 'Kavana Venkatesh' or clean == 'V. Kavana' %}<strong>{{ person }}</strong>{% elsif url %}<a href="{{ url }}" target="_blank" rel="noopener noreferrer" title="{{ clean }} — profile">{{ person }}</a>{% else %}<span>{{ person }}</span>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+              <div class="kvl-actions">
+                {% if paper.abstract and paper.abstract != blank %}
+                <details class="kvl-abstract">
+                  <summary><span class="kvl-action-icon" aria-hidden="true">↗</span> <span class="kvl-open-word">Read abstract</span><span class="kvl-close-word">Close abstract</span></summary>
+                  <div class="kvl-slide"><div class="kvl-slide-sheet"><p class="kvl-abstract-text" data-kvl-highlights="{{ paper.abstract_highlights | join: '||' | escape }}">{{ paper.abstract | escape }}</p></div></div>
+                </details>
+                {% endif %}
+                {% if paper.arxiv and paper.arxiv != empty %}<a href="{{ paper.arxiv }}" target="_blank" rel="noopener noreferrer">Paper ↗</a>{% endif %}
+                {% if paper.project and paper.project != empty %}<a href="{{ paper.project }}" target="_blank" rel="noopener noreferrer">Project ↗</a>{% endif %}
+                {% if paper.doi and paper.doi != empty %}<a href="{{ paper.doi }}" target="_blank" rel="noopener noreferrer">DOI ↗</a>{% endif %}
+                <button type="button" class="kvl-copy" data-kvl-copy="{{ paper.id }}">Copy citation</button>
+              </div>
+              <script type="application/json" id="kvl-cite-{{ paper.id }}">{{ paper.citation | jsonify }}</script>
+              {% if paper.figure and paper.figure != empty %}<figure class="kvl-figure"><img src="{{ paper.figure | relative_url }}" alt="Research figure for {{ paper.title | escape }}" loading="lazy"></figure>{% endif %}
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+      {% endfor %}
+      <p class="kvl-empty" id="kvl-empty" hidden>No publications found. Try a different search or category.</p>
+      <div class="kvl-cabinet-bottom" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+  <footer class="kvl-footer kvl-wrap"><a href="{{ '/research/' | relative_url }}">Explore research ↗</a><a href="#top">Back to top ↑</a></footer>
+</main>
+<script defer src="{{ '/assets/js/publications.js' | relative_url }}"></script>

@@ -1,0 +1,116 @@
+name: Kavana Venkatesh
+role: Ph.D. Researcher in Computer Science
+institution: Virginia Tech
+research_statement: I study how language-model agents coordinate, adapt, and sometimes fail together. My research
+  focuses on safer multi-agent systems, emergent collective behavior, and reliable agent evaluation. I also work
+  on generative vision and creative image modeling.
+focus:
+- title: Multi-agent safety
+  description: Online monitoring, cascading failures, attribution, and intervention in LLM agent systems.
+- title: Collective intelligence
+  description: Coordination, emergent influence, and scalable agent-based modeling.
+- title: Generative models
+  description: Diffusion and flow-based methods for creative image generation and editing.
+education:
+- degree: Ph.D. in Computer Science and Applications
+  school: Virginia Tech
+  detail: Doctoral research with Dr. Jiaming Cui
+  period: 2024–present
+- degree: M.S. in Data Science
+  school: Northeastern University
+  detail: Boston, Massachusetts
+  period: 2019–2021
+- degree: B.E. in Electrical and Electronics Engineering
+  school: Sri Jayachamarajendra College of Engineering (SJCE), India
+  detail: Undergraduate engineering
+  period: 2014–2018
+selected_publications:
+- year: '2026'
+  venue: NeurIPS 2026
+  title: 'CASPIAN: Online Detection and Attribution of Cascade Attacks in LLM Multi-Agent Systems via Cross-Channel
+    Causal Monitoring'
+  url: https://arxiv.org/abs/2605.19240
+  kind: Multi-agent safety
+- year: '2026'
+  venue: NeurIPS 2026
+  title: 'RAVEL: Rare Concept Generation and Editing via Graph-driven Relational Guidance'
+  url: https://arxiv.org/abs/2412.09614
+  kind: Generative vision
+- year: '2026'
+  venue: NeurIPS 2026 · Agentic Web Workshop
+  title: Do Agent Societies Develop Intellectual Elites? The Hidden Power Laws of Collective Cognition in LLM Multi-Agent
+    Systems
+  url: https://arxiv.org/abs/2604.02674
+  kind: Collective intelligence
+- year: '2025'
+  venue: NeurIPS 2025
+  title: 'CREA: A Collaborative Multi-Agent Framework for Creative Image Editing and Generation'
+  url: https://arxiv.org/abs/2504.05306
+  kind: Generative vision
+- year: '2025'
+  venue: CVPR 2025
+  title: 'FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers'
+  url: https://arxiv.org/abs/2412.09611
+  kind: Generative vision
+research_roles:
+- title: Graduate Research Assistant
+  organization: Virginia Tech
+  period: 2024–present
+  bullets:
+  - Research safe, reliable coordination in LLM multi-agent systems, including cascading failures and emergent collective
+    behavior.
+  - Develop evaluation frameworks, agent-based modeling methods, and generative vision systems.
+- title: AI Safety Research Fellow
+  organization: PRISM AI Safety Research Fellowship
+  period: 2026–present
+  bullets:
+  - Study decision-update consistency and model reliability under conflicting or evolving evidence.
+industry_roles:
+- title: Machine Learning Research Intern
+  organization: Apple
+  period: Summer 2026
+  bullets:
+  - Researched user representations and machine learning for personalized content discovery.
+- title: Applied Scientist Intern
+  organization: Amazon Science
+  period: Summer 2025
+  bullets:
+  - Worked on machine learning methods for planning and optimization at scale.
+- title: Generative AI Data Scientist
+  organization: iLink Digital
+  period: '2024'
+  bullets:
+  - Built retrieval-augmented and LLM-powered applications for document intelligence.
+- title: Data Scientist
+  organization: Fidelity Investments
+  period: 2022–2023
+  bullets:
+  - Applied NLP, computer vision, and machine learning to financial information workflows.
+teaching:
+- institution: Virginia Tech
+  period: 2024–2025
+  summary: 'Graduate Teaching Assistant: CS 4804 (Introduction to AI), CS 5805 (Machine Learning I), CS 4824 (Machine
+    Learning).'
+- institution: Northeastern University
+  period: 2020–2021
+  summary: 'Graduate Teaching Assistant: DS 2000 (Programming with Data).'
+reviewing: ICML · NeurIPS · ACL · EMNLP · CVPR · ECCV · AAAI · TMLR · ACM TIST
+recognition:
+- name: Outstanding Reviewer
+  context: CVPR 2026
+- name: Gold Reviewer
+  context: ICML 2026
+community:
+- name: PRISM Pathways Coach
+  period: 2026–present
+  detail: Mentor aspiring and current Ph.D. researchers exploring AI safety.
+- name: WiDS Worldwide Ambassador
+  period: 2024–present
+  detail: Contribute to university workshops and outreach in data science and AI.
+links:
+- label: Google Scholar
+  url: https://scholar.google.com/citations?user=ss9eXTQAAAAJ
+- label: Publications
+  url: /publications/
+- label: Talks, Teaching & Art
+  url: /talks/

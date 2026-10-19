@@ -1,0 +1,196 @@
+# Homepage notice board. Date-sorted by Jekyll, newest first. Set archive: true to move an item into Old News.
+# category: research or life. date: YYYY-MM-DD. Add links only when you have real URLs.
+items:
+- date: '2026-10-01'
+  archive: false
+  category: research
+  kind: ACADEMIC SERVICE
+  title: CVPR 2026 Outstanding Reviewer
+  description: Honored to receive the Outstanding Reviewer recognition from CVPR 2026.
+  links: []
+- date: '2026-09-01'
+  archive: false
+  category: research
+  kind: MAIN-TRACK ACCEPTANCES
+  title: CASPIAN and RAVEL accepted to NeurIPS 2026!
+  description: Two very different research directions—multi-agent safety and generative visual modeling—heading
+    to the main conference.
+  links:
+  - label: CASPIAN
+    url: https://arxiv.org/abs/2605.19240
+  - label: RAVEL
+    url: https://arxiv.org/abs/2412.09614
+- date: '2026-09-01'
+  archive: false
+  category: research
+  kind: WORKSHOPS
+  title: Three projects, four NeurIPS workshops.
+  description: Agentic Web, SocialAgent, AI4SCk, and AI4Good; grateful to the collaborators behind each project.
+  links: []
+- date: '2026-08-01'
+  archive: false
+  category: life
+  kind: RESEARCH INTERNSHIP
+  title: A summer of research at Apple.
+  description: Completed my Machine Learning Research internship in Seattle.
+  links: []
+- date: '2026-06-01'
+  archive: false
+  category: life
+  kind: FELLOWSHIP
+  title: Joined the PRISM AI Safety Research Fellowship.
+  title_link:
+    before: 'Joined the '
+    text: 'PRISM AI Safety Research Fellowship'
+    after: '.'
+    url: https://prism-research.org/
+  description: Working on decision reliability under conflicting, changing, and uncertain evidence.
+  links: []
+- date: '2026-04-01'
+  archive: false
+  category: research
+  kind: NEW PREPRINT
+  title: Coordination power laws in agent societies.
+  description: New research on collective cognition, influence, and coordination at scale.
+  links:
+  - label: Read paper
+    url: https://arxiv.org/abs/2604.02674
+- date: '2026-02-01'
+  archive: false
+  category: research
+  kind: NEW PREPRINT
+  title: PhysicsAgentABM released.
+  description: Exploring scalable generative agent-based simulation and structured collective modeling.
+  links:
+  - label: Read paper
+    url: https://arxiv.org/abs/2602.06030
+- date: '2025-09-01'
+  archive: false
+  category: life
+  title: Two papers accepted to NeurIPS 2025.
+  kind: CONFERENCE ACCEPTANCES
+  title_link:
+    before: 'Two papers accepted to '
+    text: 'NeurIPS 2025'
+    after: '.'
+    url: https://neurips.cc/
+  description: Celebrating two accepted papers at NeurIPS 2025.
+  links:
+  - label: NeurIPS 2025
+    url: https://neurips.cc/
+- date: '2025-08-01'
+  archive: false
+  category: life
+  title: Completed an Applied Scientist internship at Amazon Science.
+  kind: RESEARCH INTERNSHIP
+  title_link:
+    before: 'Completed an Applied Scientist internship at '
+    text: 'Amazon Science'
+    after: '.'
+    url: https://www.amazon.science/
+  description: Completed a summer research internship at Amazon Science.
+  links:
+  - label: Amazon Science
+    url: https://www.amazon.science/
+- date: '2025-04-01'
+  archive: true
+  category: life
+  title: Released the CREA preprint.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: CREA preprint
+    url: https://arxiv.org/abs/2504.05306
+- date: '2025-03-01'
+  archive: true
+  category: life
+  title: Presented research at CAPWIC 2025 in Washington, DC.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: CAPWIC 2025
+    url: https://capwic.org/
+- date: '2025-02-01'
+  archive: true
+  category: life
+  title: FluxSpace accepted to CVPR 2025.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: FluxSpace
+    url: https://arxiv.org/abs/2412.09611
+- date: '2024-12-01'
+  archive: true
+  category: life
+  title: Released Context Canvas and FluxSpace on arXiv.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: Context Canvas
+    url: https://arxiv.org/abs/2412.09614
+- date: '2024-08-01'
+  archive: true
+  category: life
+  title: Started my PhD in Computer Science at Virginia Tech.
+  kind: ARCHIVE
+  description: ''
+  links: []
+- date: '2024-04-01'
+  archive: true
+  category: life
+  title: Hosted a two-day Generative AI workshop at Northeastern University as a WiDS Ambassador.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: Northeastern
+    url: https://www.northeastern.edu/
+- date: '2024-03-01'
+  archive: true
+  category: life
+  title: Invited talk on responsible AI at UMass Amherst.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: UMass Amherst
+    url: https://www.umass.edu/
+- date: '2024-02-01'
+  archive: true
+  category: life
+  title: Appointed a WiDS Worldwide Ambassador.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: WiDS
+    url: https://www.widsworldwide.org/
+- date: '2023-10-01'
+  archive: true
+  category: life
+  title: Hosted an Analytics Vidhya DataHour webinar on LLMs.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: DataHour
+    url: https://community.analyticsvidhya.com/c/datahour/harnessing-the-power-of-llms-a-deep-dive-into-practical-solutions/
+- date: '2023-03-01'
+  archive: true
+  category: life
+  title: Invited talk at Northeastern University on MLOps.
+  kind: ARCHIVE
+  description: ''
+  links: []
+- date: '2022-02-01'
+  archive: true
+  category: life
+  title: Joined Fidelity Investments as a Data Scientist.
+  kind: ARCHIVE
+  description: ''
+  links:
+  - label: Fidelity
+    url: https://www.fidelity.com/
+- date: '2021-12-01'
+  archive: true
+  category: life
+  title: Graduated with an M.S. in Data Science from Northeastern University, Boston.
+  kind: ARCHIVE
+  description: ''
+  links: []

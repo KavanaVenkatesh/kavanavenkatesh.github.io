@@ -1,0 +1,164 @@
+---
+layout: kv-vintage
+permalink: /research/
+title: Research
+research_assets: true
+author_profile: false
+---
+<!-- Research stylesheet is linked here so this page works with the existing shared layout. -->
+<link rel="stylesheet" href="{{ '/assets/css/research.css' | relative_url }}">
+<article class="kr2" data-kr2>
+  <header class="kr2-intro">
+    <div class="wrap kr2-intro-inner">
+      <div>
+        <p class="kr2-eyebrow">A research notebook · revised as the questions evolve</p>
+        <h1>Research<span class="kr2-period">.</span></h1>
+        <p class="kr2-lede">A capable agent is one thing. Understanding what happens <em>between</em> agents—and across time—is another.</p>
+        <p class="kr2-intro-body">I study the mechanisms behind system-level behavior in language-model agents, drawing on interaction traces, network science, security analysis, and simulation.</p>
+        <div class="kr2-intro-links"><a href="#questions">Explore the questions ↓</a><a href="{{ '/publications/' | relative_url }}">Find the papers ↗</a></div>
+      </div>
+      <aside class="kr2-fieldguide" aria-label="Contents of the research notebook">
+        <span class="kr2-eyebrow">FIELD GUIDE / VOL. 01</span>
+        <a href="#propagation"><span>01</span> How failures travel <b>↘</b></a>
+        <a href="#evolution"><span>02</span> What changes when agents evolve <b>↘</b></a>
+        <a href="#collective"><span>03</span> What emerges from interaction <b>↘</b></a>
+        <a href="#harness"><span>04</span> What systems should observe <b>↘</b></a>
+
+      </aside>
+    </div>
+  </header>
+
+  <div class="kr2-section-intro wrap" id="questions">
+    <span class="kr2-eyebrow">OPEN QUESTIONS / INTERACTIVE TECHNICAL NOTES</span>
+    <h2>From a question <em>to a mechanism.</em></h2>
+
+  </div>
+
+  <section class="kr2-chapter kr2-chapter-pink" id="propagation" data-kr2-chapter="propagation">
+    <div class="wrap kr2-chapter-grid">
+      <div class="kr2-text">
+        <p class="kr2-eyebrow">NOTE 01 / INTERDEPENDENCE &amp; SECURITY</p>
+        <h2>How does a local failure become a <em>system-level</em> failure?</h2>
+        <p>Information crossing from one agent to another can change its role: evidence may become instruction, and a local error may be relayed or amplified downstream. Shared state and external tools create further routes across trust boundaries. I investigate how such dependencies affect system-level security and reliable coordination.</p>
+        <div class="kr2-method">
+          <strong>How I approach the problem</strong>
+          <p>I examine temporally ordered interaction traces, reconstruct cross-agent dependencies, and distinguish communication-, memory-, and tool-mediated influence. The goal is to identify origins and propagation pathways and study interventions that preserve useful collaboration.</p>
+        </div>
+        <p class="kr2-question"><span>OPEN QUESTION</span> Which local signals anticipate system-level compromise, and which dependencies matter for attribution and containment?</p>
+        <div class="kr2-related"><small>RELEVANT RESEARCH</small><a href="https://arxiv.org/abs/2605.19240" target="_blank" rel="noopener">CASPIAN ↗</a><a href="https://arxiv.org/abs/2604.02674" target="_blank" rel="noopener">Coordination in agent societies ↗</a></div>
+      </div>
+      <figure class="kr2-plate kr2-plate-pink" data-kr2-propagation>
+        <figcaption><span>PLATE I · PATHWAYS OF INFLUENCE</span><span data-kr2-channel>COMMUNICATION</span></figcaption>
+        <svg viewBox="0 0 560 370" role="img" aria-label="A conceptual multi-agent system showing communication, memory, and tool-mediated pathways that may transmit information or risk.">
+          <defs><marker id="kr2-arrow-p" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1L8 5L1 9" fill="none" stroke="#547981" stroke-width="1.7"/></marker></defs>
+          <rect class="kr2-trust" x="38" y="50" width="484" height="264" rx="16"/>
+          <text class="kr2-svg-micro" x="52" y="74">AGENT SOCIETY / INTERACTION CHANNELS</text>
+          <g class="kr2-prop-edges kr2-prop-communication"><path d="M108 176L217 126L328 178L446 119"/><path d="M217 126L284 267L446 119"/></g>
+          <g class="kr2-prop-edges kr2-prop-memory"><path d="M108 176Q165 304 284 267Q342 319 446 119"/></g>
+          <g class="kr2-prop-edges kr2-prop-tools"><path d="M217 126Q315 38 446 119"/><path d="M328 178L284 267"/></g>
+          <g class="kr2-prop-nodes">
+            <g transform="translate(108 176)"><circle r="27"/><text y="5">A₁</text></g>
+            <g transform="translate(217 126)"><circle r="27"/><text y="5">A₂</text></g>
+            <g transform="translate(328 178)"><circle r="27"/><text y="5">A₃</text></g>
+            <g transform="translate(446 119)"><circle r="27"/><text y="5">A₄</text></g>
+            <g transform="translate(284 267)"><circle r="27"/><text y="5">A₅</text></g>
+          </g>
+          <g class="kr2-prop-source"><circle cx="108" cy="176" r="38"/><text x="66" y="244">LOCAL EVENT</text></g>
+          <text class="kr2-svg-micro" x="54" y="343">The highlighted route changes across communication, memory, and tool-use channels.</text>
+        </svg>
+        <div class="kr2-plate-foot"><b data-kr2-prop-head>Messages become dependencies.</b><span data-kr2-prop-body>One agent passes an instruction or claim to another.</span></div>
+
+      </figure>
+    </div>
+  </section>
+
+  <section class="kr2-chapter kr2-chapter-lavender" id="evolution" data-kr2-chapter="evolution">
+    <div class="wrap kr2-chapter-grid kr2-chapter-grid-reverse">
+      <div class="kr2-text">
+        <p class="kr2-eyebrow">NOTE 02 / CHANGE &amp; OVERSIGHT</p>
+        <h2>If an agent evolves, what else must <em>evolve with it?</em></h2>
+        <p>An agent can change substantially without changing its underlying model. New memories, tools, skills, or workflows alter the actions it can take and the assumptions under which it was previously evaluated. I study these updates as changes in the agent's operational state, not only as changes in task performance.</p>
+        <div class="kr2-method"><strong>How I approach the problem</strong><p>I compare agent states before and after an update, characterize changes in available actions and dependencies, and investigate how oversight can respond when new capabilities introduce new risk.</p></div>
+        <p class="kr2-question"><span>OPEN QUESTION</span> What can the changes between successive agent states tell us about risks that have not yet appeared in observed behavior?</p>
+        <div class="kr2-related"><small>RESEARCH STATUS</small><span>Ongoing research direction · not represented as a published result</span></div>
+      </div>
+      <figure class="kr2-plate kr2-plate-lavender" data-kr2-evolution>
+        <figcaption><span>PLATE II · AN AGENT THROUGH TIME</span><span>EVOLUTION IS NOT JUST A NEW ANSWER</span></figcaption>
+        <div class="kr2-states">
+          <div class="kr2-state is-current" data-step="0"><span class="kr2-state-time">t₀</span><strong>A₀</strong><small>memory</small><small>tools</small><small>workflow</small></div>
+          <div class="kr2-between">→</div>
+          <div class="kr2-state" data-step="1"><span class="kr2-state-time">t₁</span><strong>A₁</strong><small>memory +</small><small>tools</small><small>workflow ↻</small></div>
+          <div class="kr2-between">→</div>
+          <div class="kr2-state" data-step="2"><span class="kr2-state-time">t₂</span><strong>A₂</strong><small>memory +</small><small>tools +</small><small>workflow ↻</small></div>
+        </div>
+        <div class="kr2-track"><div class="kr2-track-label">EVOLUTION SIGNAL <span>ξₜ</span></div><div class="kr2-track-nodes"><i></i><i></i><i></i></div></div>
+        <div class="kr2-safety-band"><span>SAFETY / OVERSIGHT</span><strong data-kr2-risk-caption>Observe the current agent state</strong><div class="kr2-safety-progress"><i></i></div></div>
+        <div class="kr2-plate-foot"><b>Capabilities change; safety assumptions need rechecking.</b><span>Oversight should respond to the agent's evolving operational state.</span></div>
+
+      </figure>
+    </div>
+  </section>
+
+  <section class="kr2-chapter kr2-chapter-mint" id="collective" data-kr2-chapter="collective">
+    <div class="wrap kr2-chapter-grid">
+      <div class="kr2-text">
+        <p class="kr2-eyebrow">NOTE 03 / SCALE &amp; COLLECTIVE DYNAMICS</p>
+        <h2>When do local interactions become <em>collective behavior?</em></h2>
+        <p>Collective behavior depends on who interacts with whom, how often, and under what constraints. Even when individual agents follow similar instructions, their interaction networks can develop uneven influence, specialization, bottlenecks, and extreme coordination events.</p>
+        <div class="kr2-method"><strong>How I approach the problem</strong><p>I measure coordination events across system sizes and network topologies, study the distribution of influence and rare interactions, and use generative agent-based models to connect local decisions with population-level outcomes.</p></div>
+        <p class="kr2-question"><span>OPEN QUESTION</span> Which collective patterns persist across tasks and network structures, and when does increasing the number of agents worsen coordination?</p>
+        <div class="kr2-related"><small>RELEVANT RESEARCH</small><a href="https://arxiv.org/abs/2604.02674" target="_blank" rel="noopener">Agent societies ↗</a><a href="https://arxiv.org/abs/2602.06030" target="_blank" rel="noopener">PhysicsAgentABM ↗</a></div>
+      </div>
+      <figure class="kr2-plate kr2-plate-mint" data-kr2-collective>
+        <figcaption><span>PLATE III · FROM INDIVIDUALS TO STRUCTURE</span><span data-kr2-network-label>LOCAL INTERACTIONS</span></figcaption>
+        <svg class="kr2-network" viewBox="0 0 560 310" role="img" aria-label="Small agent network reorganizing conceptually into communities and influential nodes as interactions accumulate.">
+          <g class="kr2-net-lines" id="kr2-net-lines"></g>
+          <g class="kr2-net-nodes" id="kr2-net-nodes"></g>
+        </svg>
+        <div class="kr2-patterns"><div><span>INDIVIDUAL ACTION</span><strong>Messages &amp; decisions</strong></div><div><span>INTERACTION STRUCTURE</span><strong>Influence &amp; specialization</strong></div><div><span>COLLECTIVE OUTCOME</span><strong>Scaling &amp; coordination</strong></div></div>
+
+      </figure>
+    </div>
+  </section>
+
+  <section class="kr2-chapter kr2-chapter-yellow" id="harness" data-kr2-chapter="harness">
+    <div class="wrap kr2-chapter-grid kr2-chapter-grid-reverse">
+      <div class="kr2-text">
+        <p class="kr2-eyebrow">NOTE 04 / OBSERVABILITY &amp; EVALUATION</p>
+        <h2>What should we measure when the final answer <em>looks right?</em></h2>
+        <p>A correct final answer does not establish that the decisions leading to it were reliable. I study what an agent observed, which evidence it used, how its commitments changed, and what happened inside the tools, memory, and orchestration layers surrounding it.</p>
+        <div class="kr2-method"><strong>How I approach the problem</strong><p>I use trace-level monitoring, attribution, and intervention alongside decision-update evaluations that examine whether revisions are proportionate to new evidence, whether justified commitments persist, and whether uncertainty is expressed appropriately.</p></div>
+        <p class="kr2-question"><span>OPEN QUESTION</span> How can intermediate-state evaluations detect unsupported updates and masked failures that outcome-only scores miss?</p>
+        <div class="kr2-related"><small>RELATED WORK</small><a href="https://arxiv.org/abs/2605.19240" target="_blank" rel="noopener">Monitoring &amp; attribution ↗</a><a href="{{ '/publications/' | relative_url }}">Other research ↗</a></div>
+      </div>
+      <figure class="kr2-plate kr2-plate-yellow" data-kr2-harness>
+        <figcaption><span>PLATE IV · THE SYSTEM AROUND AN AGENT</span><span>OBSERVE BEFORE TRUSTING</span></figcaption>
+        <div class="kr2-harness-flow" aria-label="Conceptual flow of an agent harness with task inputs, agent decisions, tools and memory, trace monitoring and evaluation">
+          <div class="kr2-h-unit" data-h-step="0"><span>01 / INPUT</span><b>Task &amp; context</b></div>
+          <div class="kr2-h-link">↓</div>
+          <div class="kr2-h-unit" data-h-step="1"><span>02 / REASONING</span><b>Agent / policy</b></div>
+          <div class="kr2-h-link">↓</div>
+          <div class="kr2-h-pair"><div class="kr2-h-unit" data-h-step="2"><span>03 / INTERACTION</span><b>Tools &amp; memory</b></div><div class="kr2-h-unit" data-h-step="3"><span>04 / OBSERVABILITY</span><b>Trace &amp; monitor</b></div></div>
+          <div class="kr2-h-link">↓</div>
+          <div class="kr2-h-unit kr2-h-eval" data-h-step="4"><span>05 / ASSESSMENT</span><b>Verify · calibrate · intervene</b></div>
+        </div>
+        <div class="kr2-plate-foot"><b data-kr2-h-caption>Task &amp; context</b><span>Reliable evaluation asks what the system observed and how it reached its result—not only what it returned.</span></div>
+
+      </figure>
+    </div>
+  </section>
+
+  <section class="kr2-synthesis">
+    <div class="wrap kr2-synthesis-inner">
+      <div><p class="kr2-eyebrow">WHERE THE MECHANISMS MEET</p><h2>Following a change <em>through the system.</em></h2></div>
+      <div><p>A newly available tool can alter an agent's actions, create new dependencies between agents, and change where failures may spread. Those same changes affect what a monitor must record and what an evaluation must test. Following this chain requires both local traces and population-level analysis.</p></div>
+    </div>
+  </section>
+
+  <section class="kr2-vision" id="generative-vision">
+    <div class="wrap kr2-vision-inner"><div><p class="kr2-eyebrow">ANOTHER RESEARCH THREAD</p><h2>Generative vision &amp; <em>diffusion models.</em></h2><p>I have also worked on controllable generation and editing with diffusion and rectified-flow models, including rare and long-tail concepts, semantic disentanglement, and preference-aware personalization. Across these problems, I am interested in how language and structured guidance can make visual generation more precise and expressive.</p><div class="kr2-related"><small>SELECTED WORK</small><a href="https://ravel-diffusion.github.io/" target="_blank" rel="noopener">RAVEL ↗</a><a href="https://crea-diffusion.github.io/" target="_blank" rel="noopener">CREA ↗</a><a href="https://fluxspace.github.io/" target="_blank" rel="noopener">FluxSpace ↗</a></div></div><figure class="kr2-vision-note"><div class="kr2-vision-note-header">FROM THE VISION NOTEBOOK</div><div class="kr2-vision-chain"><span>Concept<br>description</span><b>→</b><span>Semantic<br>guidance</span><b>→</b><span>Generation<br>&amp; editing</span></div></figure></div>
+  </section>
+  <div class="kr2-end wrap"><a href="{{ '/publications/' | relative_url }}">Browse the complete publications archive ↗</a></div>
+</article>
+<!-- Self-contained research scripting; duplicate initializations are guarded in research.js. -->
+<script defer src="{{ '/assets/js/research.js' | relative_url }}"></script>
